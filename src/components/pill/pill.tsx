@@ -1,0 +1,19 @@
+import { type PillProps } from '@/types/types';
+import Link from 'next/link';
+
+export function Pill({ href, children, className }: PillProps) {
+  return (
+    <Link 
+      href={href}
+      rel='noopener noreferrer'
+      className={`flex cursor-pointer items-center gap-2
+      rounded-xl border px-3 py-2 hover:scale-105
+      hover:bg-black hover:bg-opacity-5 ${className}
+      border border-black dark:border-[#fafafa] 
+      dark:hover:bg-[#fafafa] dark:hover:bg-opacity-5
+      tracking-wider`}
+    >
+      {children}
+    </Link>
+  );
+}
