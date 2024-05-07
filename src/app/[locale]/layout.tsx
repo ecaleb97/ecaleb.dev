@@ -1,13 +1,12 @@
 import '@/app/globals.css';
-import { ModeToggle } from '@/components/darkMode/mode-toogle';
 import { Header } from '@/components/header/header';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { Stars } from '@/components/stars/stars';
+import { LanguagePicker } from '@/components/switcher/language-switcher';
+import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
 import { Toaster } from '@/components/ui/sonner';
+import { raleway } from '@/lib/fonts';
 import type { Metadata } from 'next';
-import { Raleway } from 'next/font/google';
-
-const inter = Raleway({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Caleb | Personal Portfolio',
@@ -15,15 +14,26 @@ export const metadata: Metadata = {
   enjoys building websites and apps.`,
 };
 
+interface Props {
+  children: React.ReactNode;
+  params: { locale: string };
+}
+
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  params: { locale }
+}: Readonly<
+  Props
+>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} bg-[#F4EFF0] sm:bg-gray-100 text-gray-950 relative
-        min-h-screen dark:bg-[#1A1E36] dark:text-white`}
+    <html lang={locale} suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/public/caleb-portrait.webp" />
+      </head>
+      <body 
+        className={`${raleway.className} antialiased bg-[#F4EFF0] 
+        sm:bg-gray-100 text-gray-950 relative
+        min-h-screen dark:bg-customDark dark:text-white`}
       >
         <ThemeProvider
           attribute='class'
@@ -44,8 +54,11 @@ export default function RootLayout({
           <Stars />
           <Header />
           {children}
-          <div className='fixed bottom-4 right-4'>
-            <ModeToggle />
+          <div className='hidden sm:block fixed bottom-4 right-4'>
+            <ThemeSwitcher variant='outline' />
+          </div>
+          <div className='hidden sm:block fixed bottom-4 left-4'>
+            <LanguagePicker variant='outline' />
           </div>
           <Toaster />
         </ThemeProvider>

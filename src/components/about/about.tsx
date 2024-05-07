@@ -1,24 +1,22 @@
 import { SectionHeading } from '@/components/heading/section-heading';
-import { User } from 'lucide-react';
+import { SectionWrapper } from '@/components/section/section-wrapper';
 
 export function About() {
   return (
-    <section
+    <SectionWrapper
       id='about'
-      className='w-full max-w-[50rem] text-left
-      scroll-mt-28 mb-28 flex flex-col gap-10'
+      className='mb-20'
     >
       <SectionHeading>
-        <User size={30} />
         About Me
       </SectionHeading>
       <p
-        className='tracking-wider leading-8'
+        className='tracking-wider text-sm sm:text-base leading-7'
       >
         My name is Caleb, I&apos;m started coding when I was 24 years old.
         I&apos;m currently working as a Indie Full-stack Developer. I&apos;
         also a student at 42 Madrid.
       </p>
-    </section>
+    </SectionWrapper>
   );
 }
