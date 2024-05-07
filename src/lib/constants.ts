@@ -1,11 +1,15 @@
 export const links = [
   {
     name: 'Home',
-    hash: '#home',
+    hash: '/',
   },
   {
     name: 'Projects',
     hash: '#projects',
+  },
+  {
+    name: 'Experience',
+    hash: '#experience'
   },
   {
     name: 'About',
@@ -14,10 +18,6 @@ export const links = [
   {
     name: 'Skills',
     hash: '#skills'
-  },
-  {
-    name: 'Experience',
-    hash: '#experience'
   },
   {
     name: 'Contact',

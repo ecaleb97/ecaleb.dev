@@ -1,17 +1,40 @@
-import ecommerceDark from '/public/ecommerceDark.webp';
-import ecommerceLight from '/public/ecommerceLight.webp';
+import { Nextjs } from '@/components/icons/next';
+import { TailwindCSS } from '@/components/icons/tailwind';
+import { TypeScript } from '@/components/icons/typescript';
+import React from 'react';
 
-export const projectsData = [
+export const project1 = [
   {
-    title: 'Project 1',
-    description: 'This is a project description',
-    tags: ['Next.js', 'Tailwind CSS', 'TypeScript'],
-    imageUrl: ecommerceLight,
+    icon: React.createElement(Nextjs),
+    framework: 'Next.js',
+    link: 'https://nextjs.org/',
   },
   {
-    title: 'Project 2',
-    description: 'This is a project description',
-    tags: ['Next.js', 'Tailwind CSS', 'TypeScript'],
-    imageUrl: ecommerceDark,
+    icon: React.createElement(TailwindCSS),
+    framework: 'Tailwind',
+    link: 'https://tailwindcss.com/',
+  },
+  {
+    icon: React.createElement(TypeScript),
+    framework: 'TypeScript',
+    link: 'https://www.typescriptlang.org/',
+  },
+];
+
+export const project2 = [
+  {
+    icon: React.createElement(Nextjs),
+    framework: 'Next.js',
+    link: 'https://nextjs.org/',
+  },
+  {
+    icon: React.createElement(TailwindCSS),
+    framework: 'Tailwind',
+    link: 'https://tailwindcss.com/',
+  },
+  {
+    icon: React.createElement(TypeScript),
+    framework: 'TypeScript',
+    link: 'https://www.typescriptlang.org/',
   },
 ];

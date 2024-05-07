@@ -1,5 +1,9 @@
 import { StaticImageData } from 'next/image';
 
+export interface ChildrenProps {
+  children: React.ReactNode;
+}
+
 export interface PillProps {
   href: string;
   children: React.ReactNode;
@@ -9,7 +13,30 @@ export interface PillProps {
 export interface ProjectProps {
   title: string;
   description: string;
-  imageUrl: StaticImageData;
-  imageUrlDark: StaticImageData;
-  tags: string[];
+  tags: Array<Record<ProjectTag>>;
+  imageUrl: StaticImageData | string;
+}
+
+export interface ProjectTag {
+  icon: React.ReactNode;
+  framework: string;
+  link?: string;
+}
+
+export interface ContactProps {
+  title: string;
+  description: string;
+  labelEmail: string;
+  labelMessage: string;
+  labelSubmit: string;
+}
+
+export interface SectionWrapperProps {
+  children: React.ReactNode;
+  className?: string;
+  id: string;
+}
+
+interface Variant {
+  variant?: 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link';
 }
