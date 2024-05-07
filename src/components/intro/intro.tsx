@@ -1,8 +1,8 @@
 import styles from '@/components/intro/intro.module.css';
 import { SocialPills } from '@/components/social/social-pills';
+import calebPortrait from '@/static/images/me.webp';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import calebPortrait from '/public/me.webp';
 
 export function Intro() {
   const t = useTranslations('intro');

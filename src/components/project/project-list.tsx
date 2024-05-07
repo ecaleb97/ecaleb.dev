@@ -1,5 +1,6 @@
 import { ProjectItem } from '@/components/project/project-item';
 import { project1, project2 } from '@/lib/data';
+import ecommerceLight from '@/static/images/ecommerceLight.webp';
 import { ProjectProps } from '@/types/types';
 import { useTranslations } from 'next-intl';
 
@@ -10,13 +11,13 @@ export function ProjectList() {
       title: t('projectsItems.project1.title'),
       description: t('projectsItems.project1.description'),
       tags: project1,
-      imageUrl: '/ecommerceLight.webp',
+      imageUrl: ecommerceLight,
     },
     {
       title: t('projectsItems.project2.title'),
       description: t('projectsItems.project1.description'),
       tags: project2,
-      imageUrl: '/ecommerceLight.webp',
+      imageUrl: ecommerceLight,
     },
   ] satisfies ProjectProps[];
 

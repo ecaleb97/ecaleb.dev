@@ -8,7 +8,7 @@ export function Footer() {
       px-4 text-black dark:text-gray-200"
     >
       <p className="mb-2 tracking-wider">
-        Caleb Villanueva Zamalloa - {currentYear}
+        &copy; {currentYear} Caleb Villanueva Zamalloa
       </p>
       <SociasLinks />
     </footer>

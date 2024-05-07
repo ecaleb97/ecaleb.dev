@@ -4,11 +4,11 @@ import { Stars } from '@/components/stars/stars';
 import { LanguagePicker } from '@/components/switcher/language-switcher';
 import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
 import { links } from '@/lib/constants';
+import emojiCaleb from '@/static/images/emoji-caleb.webp';
 import { Equal, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import calebImage from '/public/caleb-portrait.webp';
 
 export function Header () {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +62,7 @@ export function Header () {
           dark:border-none rounded-full'
         >
           <Image
-            src={calebImage}
+            src={emojiCaleb}
             alt="Caleb's profile picture"
             className='rounded-full'
             width={36}

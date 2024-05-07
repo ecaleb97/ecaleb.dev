@@ -16,7 +16,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { sendEmailFormSchema } from '@/schemas/send-email';
 import { type ContactProps } from '@/types/types';
-import { ChatBubbleBottomCenterIcon } from '@heroicons/react/24/outline';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
@@ -95,6 +94,7 @@ export function Contact({
                       {...field}
                       placeholder='example@gmail.com'
                       className='dark:bg-customDark border dark:border-[#fafafa]'
+                      autoComplete='email'
                     />
                   </FormControl>
                   <FormMessage />

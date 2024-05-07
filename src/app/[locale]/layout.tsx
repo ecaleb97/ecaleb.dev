@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/public/caleb-portrait.webp" />
+        <link rel="icon" href='./static/images/emoji-caleb.webp' />
       </head>
       <body 
         className={`${raleway.className} antialiased bg-[#F4EFF0] 
