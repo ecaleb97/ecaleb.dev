@@ -4,7 +4,7 @@ import { Stars } from '@/components/stars/stars';
 import { LanguagePicker } from '@/components/switcher/language-switcher';
 import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
 import { links } from '@/lib/constants';
-import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import { Equal, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -78,7 +78,7 @@ export function Header () {
             onClick={toogleMobileMenu}
             aria-label='Toggle mobile menu'
           >
-            {isOpen ? <XMarkIcon /> : <Bars2Icon />}
+            {isOpen ? <X /> : <Equal />}
           </button>
         </div>
       </div>
@@ -92,7 +92,7 @@ export function Header () {
               className='size-6 text-[#333336] dark:text-[#fbfbfb]' 
               onClick={toogleMobileMenu}
             >
-              <XMarkIcon />
+              <X />
             </button>
           </div>
           <ul className='text-[#333336] dark:text-[#fbfbfb] text-3xl pl-10 font-semibold
