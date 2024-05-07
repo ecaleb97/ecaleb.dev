@@ -1,6 +1,8 @@
 'use client';
 
 import { Stars } from '@/components/stars/stars';
+import { LanguagePicker } from '@/components/switcher/language-switcher';
+import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
 import { links } from '@/lib/constants';
 import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
@@ -42,6 +44,7 @@ export function Header () {
                 <Link 
                   href={link.hash}
                   className='flex w-full justify-center items-center p-3
+                  text-gray-800
                   hover:text-gray-950 transition dark:text-gray-600
                   dark:hover:text-gray-500 hover:scale-105 tracking-wider'
                 >
@@ -67,13 +70,21 @@ export function Header () {
             priority
           />
         </div>
-        <button className='size-6 dark:text-white' onClick={toogleMobileMenu}>
-          {isOpen ? <XMarkIcon /> : <Bars2Icon />}
-        </button>
+        <div className='flex gap-3 items-center'>
+          <LanguagePicker variant='default' />
+          <ThemeSwitcher variant='default' />
+          <button 
+            className='size-6 dark:text-white' 
+            onClick={toogleMobileMenu}
+            aria-label='Toggle mobile menu'
+          >
+            {isOpen ? <XMarkIcon /> : <Bars2Icon />}
+          </button>
+        </div>
       </div>
       {isOpen && (
         <nav className='bg-[#F4EFF0] w-full min-h-screen fixed top-0
-        bottom-0 sm:hidden dark:bg-[#1A1E36] dark:text-[#fbfbfb] z-[999]'
+        bottom-0 sm:hidden dark:bg-customDark dark:text-[#fbfbfb] z-[999]'
         >
           <Stars />
           <div className='h-[3rem] flex justify-end items-center pr-4 py-8'>

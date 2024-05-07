@@ -2,6 +2,7 @@
 
 import { SectionHeading } from '@/components/heading/section-heading';
 import styles from '@/components/intro/intro.module.css';
+import { SectionWrapper } from '@/components/section/section-wrapper';
 import { Button } from '@/components/ui/button';
 import {
   Form,
@@ -14,13 +15,16 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { sendEmailFormSchema } from '@/schemas/send-email';
+import { type ContactProps } from '@/types/types';
 import { ChatBubbleBottomCenterIcon } from '@heroicons/react/24/outline';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { z } from 'zod';
 
-export function Contact() {
+export function Contact({ 
+  title, description, labelEmail, labelMessage, labelSubmit
+}: ContactProps) {
   const form = useForm<z.infer<typeof sendEmailFormSchema>>({
     resolver: zodResolver(sendEmailFormSchema),
     defaultValues: {
@@ -49,17 +53,14 @@ export function Contact() {
   };
 
   return (
-    <section
+    <SectionWrapper
       id='contact'
-      className='w-full max-w-[50rem] text-left
-      scroll-mt-28 flex flex-col gap-10'
     >
       <SectionHeading>
-        <ChatBubbleBottomCenterIcon className='size-6' />
-        Contact me
+        {title}
       </SectionHeading>
-      <p className='tracking-wider'>
-        Please contact me if you have any questions or would like to work together. {' '}
+      <p className='tracking-wider text-sm sm:text-base leading-7'>
+        {description}
         <a
           href="mailto:ecaleb.vz@gmail.com"
           className={`underline font-bold ${styles.textAnimate} 
@@ -85,7 +86,7 @@ export function Contact() {
                     htmlFor='email'
                     className='tracking-wider'
                   >
-                    Email
+                    {labelEmail}
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -93,7 +94,7 @@ export function Contact() {
                       type='email'
                       {...field}
                       placeholder='example@gmail.com'
-                      className='dark:bg-[#1A1E36] border dark:border-[#fafafa]'
+                      className='dark:bg-customDark border dark:border-[#fafafa]'
                     />
                   </FormControl>
                   <FormMessage />
@@ -109,13 +110,13 @@ export function Contact() {
                     htmlFor='message'
                     className='tracking-wider'
                   >
-                    Message
+                    {labelMessage}
                   </FormLabel>
                   <FormControl>
                     <Textarea
                       id='message'
                       placeholder='Your message here...'
-                      className='dark:bg-[#1A1E36] border dark:border-[#fafafa]'
+                      className='dark:bg-customDark border dark:border-[#fafafa]'
                       {...field}
                     />
                   </FormControl>
@@ -128,10 +129,10 @@ export function Contact() {
             className='dark:bg-[#fafafa] hover:scale-105 tracking-wider'
             type='submit'
           >
-            Send
+            {labelSubmit}
           </Button>
         </form>
       </Form>
-    </section>
+    </SectionWrapper>
   );
 }
