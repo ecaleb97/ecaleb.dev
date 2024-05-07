@@ -1,0 +1,27 @@
+{
+  "intro": {
+    "name": "Hi, I'm Caleb",
+    "description": "Fullstack developer with +1 years of experience.",
+    "description2": "I'm passionate about creating amazing user experiences."
+  },
+  "projects": {
+    "title": "Projects",
+    "projectsItems": {
+      "project1": {
+        "title": "Project 1",
+        "description": "Here are some of the projects I've worked on."
+      },
+      "project2": {
+        "title": "Project 2",
+        "description": "This is a description of project 2."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact me",
+    "description": "Please contact me if you have any questions or would like to work together. ",
+    "labelEmail": "Email",
+    "labelMessage": "Message",
+    "labelSubmit": "Send message"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "intro": {
+    "name": "Hola, soy Caleb.",
+    "description": "Soy un desarrollador de software.",
+    "description2": "Me encanta crear aplicaciones web y móviles."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "projectsItems": {
+      "project1": {
+        "title": "Proyecto 1",
+        "description": "Here are some of the projects I've worked on."
+      },
+      "project2": {
+        "title": "Proyecto 2",
+        "description": "This is a description of project 2."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Contáctame si tienes alguna pregunta o si quieres trabajar juntos. ",
+    "labelEmail": "Email",
+    "labelMessage": "Mensaje",
+    "labelSubmit": "Enviar mensaje"
+  }
+}
