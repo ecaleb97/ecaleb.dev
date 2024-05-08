@@ -18,6 +18,7 @@ export function ProjectItem({
           alt={title}
           width={400}
           height={300}
+          priority
           className='rounded-t-lg object-cover w-full'
         />
         <article 
