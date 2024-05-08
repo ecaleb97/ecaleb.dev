@@ -14,14 +14,6 @@ export const metadata: Metadata = {
     template: '%s | ',
     default: 'Caleb Personal Portfolio',
   },
-  icons: {
-    icon: [
-      {
-        url: '/favicon.ico',
-        media: '(prefers-color-scheme: no-preference)',
-      }
-    ]
-  },
   description: `Caleb is a full-stack developer who 
   enjoys building websites and apps.`,
 };
