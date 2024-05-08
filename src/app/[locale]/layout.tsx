@@ -14,6 +14,14 @@ export const metadata: Metadata = {
     template: '%s | ',
     default: 'Caleb Personal Portfolio',
   },
+  icons: {
+    icon: [
+      {
+        url: '/favicon.ico',
+        media: '(prefers-color-scheme: no-preference)',
+      }
+    ]
+  },
   description: `Caleb is a full-stack developer who 
   enjoys building websites and apps.`,
 };
@@ -31,6 +39,9 @@ export default function RootLayout({
 >) {
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${raleway.className} antialiased bg-[#F4EFF0] 
         sm:bg-gray-100 text-gray-950 relative
