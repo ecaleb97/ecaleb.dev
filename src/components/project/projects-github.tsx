@@ -2,7 +2,6 @@
 
 import { DefaultProjects } from '@/components/project/default-projects';
 import { SkeletonCard } from '@/components/project/skeleton-card';
-import { Input } from '@/components/ui/input';
 import { useQuery } from '@tanstack/react-query';
 import { ArrowUpRight, Star as StarIcon } from 'lucide-react';
 
@@ -16,8 +15,8 @@ export interface GithubResultApi {
 }
 
 export async function getGithubRepos() {
-  // const githubUrl = 'https://api.github.com/users/ecaleb97/repos?type=owner&sort=updated';
-  const githubUrl = '';
+  const githubUrl = 'https://api.github.com/users/ecaleb97/repos?type=owner&sort=updated';
+  // const githubUrl = '';
   const response = await fetch(githubUrl);
   const data = await response.json();
 
