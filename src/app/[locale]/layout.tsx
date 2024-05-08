@@ -31,7 +31,7 @@ export default function RootLayout({
 >) {
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body 
+      <body
         className={`${raleway.className} antialiased bg-[#F4EFF0] 
         sm:bg-gray-100 text-gray-950 relative
         min-h-screen dark:bg-customDark dark:text-white`}
