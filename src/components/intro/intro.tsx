@@ -21,14 +21,14 @@ export function Intro() {
         className='size-[6rem] sm:size-[8rem] object-cover rounded-full z-10'
       />
       <h1 
-        className={`text-xl sm:text-3xl font-bold ${styles.textAnimate} 
+        className={`text-2xl sm:text-3xl font-bold ${styles.textAnimate} 
         dark:bg-gradient-to-r from-[#fff08b] from-20% 
         via-[#00affa] via-30%
         to-[#fff08b] to-80%`}
       >
         {t('name')}
       </h1>
-      <p className='text-lg tracking-wider leading-8 sm:leading-10 pb-3'>
+      <p className='text-base tracking-wider leading-8 pb-3'>
         {t('description')}
         <br />
         {t('description2')}
