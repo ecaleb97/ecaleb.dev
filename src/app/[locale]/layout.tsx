@@ -31,9 +31,6 @@ export default function RootLayout({
 >) {
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-      </head>
       <body 
         className={`${raleway.className} antialiased bg-[#F4EFF0] 
         sm:bg-gray-100 text-gray-950 relative
