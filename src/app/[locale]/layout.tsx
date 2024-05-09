@@ -10,12 +10,26 @@ import { raleway } from '@/lib/fonts';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ecaleb.dev'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      en: 'https://ecaleb.dev',
+      es: 'https://ecaleb.dev/es',
+    }
+  },
+  
   title: {
     template: '%s | ',
     default: 'Caleb Personal Portfolio',
   },
   description: `Caleb is a full-stack developer who 
   enjoys building websites and apps.`,
+  icons: {
+    icon: {
+      url: '/favicon.ico',
+    }
+  }
 };
 
 interface Props {
@@ -31,9 +45,6 @@ export default function RootLayout({
 >) {
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
       <body
         className={`${raleway.className} antialiased bg-[#F4EFF0] 
         sm:bg-gray-100 text-gray-950 relative
