@@ -28,10 +28,12 @@ export function Intro() {
       >
         {t('name')}
       </h1>
-      <p className='text-base tracking-wider leading-8 pb-3'>
+      <p className='text-base tracking-wider leading-8 pb-3 text-pretty'>
         {t('description')}
         <br />
         {t('description2')}
+        <br />
+        {t('description3')}
       </p>
       <SocialPills />
     </section>

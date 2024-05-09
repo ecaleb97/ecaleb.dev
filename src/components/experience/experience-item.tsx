@@ -1,7 +1,19 @@
 import { cn } from '@/lib/utils';
 import { ArrowUpRight } from 'lucide-react';
 
-export function ExperienceItem() {
+interface ExperienceItemProps {
+  jobTitle: string;
+  company: string;
+  date: string;
+  description: string;
+}
+
+export function ExperienceItem({ 
+  jobTitle, 
+  company, 
+  date, 
+  description 
+}: ExperienceItemProps) {
   return (
     <li className="ms-5 mt-1">
       <div
@@ -15,14 +27,14 @@ export function ExperienceItem() {
         className="mb-2 font-mono text-sm font-normal leading-none 
             text-neutral-600 dark:text-neutral-400"
       >
-            2023 - Present
+        {date}
       </time>
       <div className="mt-2 flex flex-col space-y-0.5">
         <h3 
           className="text-lg font-semibold tracking-tight 
               text-gray-900 dark:text-white"
         >
-              Freelance Web Developer
+          {jobTitle}
         </h3>
         <a
           href='/'
@@ -32,7 +44,7 @@ export function ExperienceItem() {
               text-neutral-600 transition-colors duration-150 hover:text-black 
               dark:border-neutral-800 dark:text-neutral-400 dark:hover:text-white"
         >
-          <span>Freelance</span>
+          <span>{company}</span>
           <ArrowUpRight
             className="ml-1 duration-150 group-hover:translate-x-[1.5px]"
             size={12}
@@ -44,8 +56,7 @@ export function ExperienceItem() {
         className="mt-3 text-pretty text-sm sm:text-base dark:text-neutral-400 
             tracking-wider leading-7"
       >
-            I work as a freelance web developer, building websites 
-            and web applications for clients around the world.
+        {description}
       </p>
     </li>
   );

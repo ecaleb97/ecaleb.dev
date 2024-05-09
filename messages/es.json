@@ -1,8 +1,9 @@
 {
   "intro": {
     "name": "Hola, soy Caleb.",
-    "description": "Soy un desarrollador de software.",
-    "description2": "Me encanta crear aplicaciones web y móviles."
+    "description": "Soy desarrollador web fullstack",
+    "description2": "Me centro en crear aplicaciones utilizando diferentes tecnologías, mejorando la experiencia de usuario y rendimiento de las aplicaciones",
+    "description3": "Además del software, otra de mis pasiones son las matemáticas y la lectura. Me encanta enseñar y aprender cosas nuevas cada día."
   },
   "projects": {
     "title": "Proyectos",
@@ -16,6 +17,38 @@
         "description": "This is a description of project 2."
       }
     }
+  },
+  "experience": {
+    "jobs": {
+      "job1": {
+        "title": "Desarrollador Web Fullstack",
+        "company": "Freelance",
+        "date": "2023 - Present",
+        "description": "Me encargo de desarrollar aplicaciones y paginas web para diferentes clientes. Dando soporte y mantenimiento a las aplicaciones ya existentes. Mejorando la experiencia de usuario y la eficiencia de las aplicaciones."
+      },
+      "job2": {
+        "title": "Mobile Device Managament",
+        "company": "Indra Sistemas",
+        "date": "2022 - 2023",
+        "description": "Dentro del equipo fui uno de los responsables de la gestión de dispositivos móviles de la empresa y clientes. Configuración y mantenimiento de dispositivos iOS y Android. Soporte técnico a nivel software y hardware a empleados y clientes."
+      },
+      "job3": {
+        "title": "Apple Certified Technician",
+        "company": "K-tuin Sistemas Informáticos",
+        "date": "2020 - 2022",
+        "description": "Dentro de mis responsabilidades estaba la reparación de dispositivos Apple. Configuración y mantenimiento de dispositivos iOS y MacOS. Soporte técnico a nivel software y hardware a clientes."
+      },
+      "job4": {
+        "title": "Profesor Particular de Matemáticas",
+        "company": "Freelance",
+        "date": "2017 - Presente",
+        "description": "Ayudo a estudiantes de la ESO, Bachillerato y Universidad a mejorar sus habilidades en matemáticas. Creo clases personalizadas en función de las necesidades de cada alumno"
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Actualmente soy desarrollador web fullstack y profesor particular de matemáticas. Fuera del software, disfruto mejorando mis habilidades en matemáticas y leyendo, viajando (New York es mi ciudad favorita) y aprendiendo cosas nuevas cada día."
   },
   "contact": {
     "title": "Contacto",

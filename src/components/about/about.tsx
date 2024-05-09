@@ -1,21 +1,23 @@
 import { SectionHeading } from '@/components/heading/section-heading';
 import { SectionWrapper } from '@/components/section/section-wrapper';
+import { useTranslations } from 'next-intl';
 
 export function About() {
+  const t = useTranslations('about');
+
   return (
     <SectionWrapper
       id='about'
       className='mb-20'
     >
       <SectionHeading>
-        About Me
+        {t('title')}
       </SectionHeading>
       <p
-        className='tracking-wider text-sm sm:text-base leading-7'
+        className='tracking-wider text-pretty text-sm sm:text-base 
+        leading-7 sm:leading-8'
       >
-        My name is Caleb, I&apos;m started coding when I was 24 years old.
-        I&apos;m currently working as a Indie Full-stack Developer. I&apos;
-        also a student at 42 Madrid.
+        {t('description')}
       </p>
     </SectionWrapper>
   );

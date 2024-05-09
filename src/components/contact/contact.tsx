@@ -17,6 +17,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { sendEmailFormSchema } from '@/schemas/send-email';
 import { type ContactProps } from '@/types/types';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useTransition } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { z } from 'zod';
@@ -24,6 +25,8 @@ import { z } from 'zod';
 export function Contact({ 
   title, description, labelEmail, labelMessage, labelSubmit
 }: ContactProps) {
+  const [isPending, startTransition] = useTransition();
+
   const form = useForm<z.infer<typeof sendEmailFormSchema>>({
     resolver: zodResolver(sendEmailFormSchema),
     defaultValues: {
@@ -35,20 +38,25 @@ export function Contact({
   const onSubmit = async (values: z.infer<typeof sendEmailFormSchema>) => {
     console.log(values);
     const { email, message } = values;
-    try {
-      await fetch('/api/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ email, message })
-      });
-      toast.success('Message sent successfully');
-      form.reset();
-    } catch (error) {
-      console.error(error);
-      toast.error('An error occurred while sending the message');
-    }
+    startTransition(() => {
+      async function sendEmail() {
+        try {
+          await fetch('/api/send', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email, message })
+          });
+          toast.success('Message sent successfully');
+          form.reset();
+        } catch (error) {
+          console.error(error);
+          toast.error('An error occurred while sending the message');
+        }
+      }
+      sendEmail();
+    });
   };
 
   return (
@@ -128,6 +136,7 @@ export function Contact({
           <Button 
             className='dark:bg-[#fafafa] hover:scale-105 tracking-wider'
             type='submit'
+            disabled={isPending}
           >
             {labelSubmit}
           </Button>
