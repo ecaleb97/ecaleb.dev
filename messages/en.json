@@ -19,6 +19,7 @@
     }
   },
   "experience": {
+    "title": "Experience",
     "jobs": {
       "job1": {
         "title": "Fullstack Developer",

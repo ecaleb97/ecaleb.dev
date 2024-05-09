@@ -19,6 +19,7 @@
     }
   },
   "experience": {
+    "title": "Experiencia",
     "jobs": {
       "job1": {
         "title": "Desarrollador Web Fullstack",
