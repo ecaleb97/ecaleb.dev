@@ -19,6 +19,22 @@ export const metadata: Metadata = {
       es: 'https://ecaleb.dev/es',
     }
   },
+  keywords: ['developer', 'web', 'front-end', 'back-end', 'full-stack', 
+    'Next.js', 'React', 'Node.js', 'TypeScript', 'Tailwind CSS', 'Portfolio',
+    'Caleb Zamalloa', 'Caleb', 'Zamalloa', 'ecaleb', 'ecaleb.dev', 'web developer',
+    'developer portfolio', 'web developer portfolio', 'full-stack developer',
+    'full-stack developer portfolio', 'web developer portfolio', 'web developer',
+  ],
+  generator: 'Caleb Zamalloa Portfolio', 
+  applicationName: 'Caleb Zamalloa Portfolio',
+  creator: 'Caleb Zamalloa',
+  publisher: 'Caleb Zamalloa',
+  authors: [{ name: 'Caleb Zamalloa', url: 'https://ecaleb.dev' }],
+  formatDetection: {
+    email: false,
+    telephone: false,
+    address: false,
+  },
   title: {
     template: '%s | Caleb Zamalloa',
     default: 'Caleb Zamalloa',
@@ -40,6 +56,7 @@ export const metadata: Metadata = {
       }
     ]
   },
+  manifest: 'https://ecaleb.dev/manifest.json',
   robots: {
     index: true,
     follow: true,
@@ -56,10 +73,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   icons: {
-    icon: {
-      url: '/favicon.ico',
-    }
-  }
+    icon: [
+      { url: '/favicon.ico' },
+      new URL('/favicon.ico', 'https://ecaleb.dev'),
+    ],
+  },
 };
 
 interface Props {
