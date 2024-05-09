@@ -20,7 +20,7 @@ export function Projects() {
           href='/projects' 
           className='flex items-center gap-2 hover:scale-105 hover:text-gray-400'
         >
-          More
+          {t('link')}
           <ArrowRight size={16} />
         </Link>
       </div>
