@@ -1,4 +1,5 @@
 import '@/app/globals.css';
+import { Footer } from '@/components/footer/footer';
 import { Header } from '@/components/header/header';
 import { Providers } from '@/components/providers/providers';
 import { ThemeProvider } from '@/components/providers/theme-provider';
@@ -8,6 +9,7 @@ import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
 import { Toaster } from '@/components/ui/sonner';
 import { raleway } from '@/lib/fonts';
 import type { Metadata } from 'next';
+import { useTranslations } from 'next-intl';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ecaleb.dev'),
@@ -42,6 +44,8 @@ export default function RootLayout({
 }: Readonly<
   Props
 >) {
+  const t = useTranslations('nav');
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
@@ -67,7 +71,13 @@ export default function RootLayout({
             dark:bg-transparent' 
             />
             <Stars />
-            <Header />
+            <Header
+              home={t('home')}
+              projects={t('projects')}
+              experience={t('experience')}
+              about={t('about')}
+              contact={t('contact')}  
+            />
             {children}
             <div className='hidden sm:block fixed bottom-4 right-4'>
               <ThemeSwitcher variant='outline' />
@@ -75,6 +85,7 @@ export default function RootLayout({
             <div className='hidden sm:block fixed bottom-4 left-4'>
               <LanguagePicker variant='outline' />
             </div>
+            <Footer />
             <Toaster />
           </ThemeProvider>
         </Providers>

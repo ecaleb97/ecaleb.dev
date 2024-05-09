@@ -13,17 +13,6 @@ export default function Home() {
   return (
     <main className='flex flex-col items-center px-5'>
       <Intro />
-      <Projects />
-      <Experience />
-      <About />
-      <Contact
-        title={t('title')}
-        description={t('description')}
-        labelEmail={t('labelEmail')}
-        labelMessage={t('labelMessage')}
-        labelSubmit={t('labelSubmit')}
-      />
-      <Footer />
     </main>
   );
 }
