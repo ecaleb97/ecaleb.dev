@@ -14,11 +14,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      en: 'https://ecaleb.dev',
+      en: 'https://ecaleb.dev/en',
       es: 'https://ecaleb.dev/es',
     }
   },
-  
   title: {
     template: '%s | ',
     default: 'Caleb Personal Portfolio',
