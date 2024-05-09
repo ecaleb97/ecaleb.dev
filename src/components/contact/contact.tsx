@@ -36,7 +36,7 @@ export function Contact({
   });
 
   const onSubmit = async (values: z.infer<typeof sendEmailFormSchema>) => {
-    console.log(values);
+    // console.log(values);
     const { email, message } = values;
     startTransition(() => {
       async function sendEmail() {

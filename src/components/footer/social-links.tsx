@@ -1,35 +1,19 @@
-export function SociasLinks() {
-  const socialLinks = [
-    {
-      name: 'Next.js',
-      href: 'https://nextjs.org/',
-    },
-    {
-      name: 'shadcn/ui',
-      href: 'https://ui.shadcn.com/',
-    },
-    {
-      name: 'Tailwind CSS',
-      href: 'https://tailwindcss.com/',
-    },
-  ];
-
+export function SocialLink({ 
+  frameworkName,
+  href
+}: {
+    frameworkName: string;
+    href: string;
+  }
+) {
   return (
-    <p>
-      Made with ❤️ with {' '}
-      {socialLinks.map((link) => (
-        <>
-          <a 
-            key={link.href} 
-            href={link.href} 
-            className="underline cursor-pointer" 
-            target="_blank"
-          >
-            {link.name}
-          </a>
-          {', '}
-        </>
-      ))}
-    </p>
+    <a 
+      href={href} 
+      className="underline cursor-pointer"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      {frameworkName}
+    </a>
   );
 }
