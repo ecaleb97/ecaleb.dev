@@ -13,7 +13,7 @@ import { useTranslations } from 'next-intl';
 export const metadata: Metadata = {
   metadataBase: new URL('https://ecaleb.dev'),
   alternates: {
-    canonical: '/',
+    canonical: 'https://ecaleb.dev',
     languages: {
       en: 'https://ecaleb.dev/en',
       es: 'https://ecaleb.dev/es',
