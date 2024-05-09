@@ -31,6 +31,14 @@ export const metadata: Metadata = {
     siteName: 'Caleb Zamalloa',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: 'https://ecaleb.dev/images/og-image.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Caleb Zamalloa',
+      }
+    ]
   },
   robots: {
     index: true,

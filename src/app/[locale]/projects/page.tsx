@@ -8,7 +8,13 @@ import {
   QueryClient,
   dehydrate
 } from '@tanstack/react-query';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description: 'View my projects and contributions to open-source.',
+};
 
 export default async function ProjectsPage() {
   const queryClient = new QueryClient();

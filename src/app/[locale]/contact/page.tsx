@@ -1,5 +1,12 @@
 import { Contact } from '@/components/contact/contact';
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
+
+export const metadata: Metadata = {
+  title: 'Contact',
+  description: 'Get in touch with me through the contact form.',
+};
+
 
 export default function ContactPage() {
   const t = useTranslations('contact');
