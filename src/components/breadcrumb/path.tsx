@@ -6,11 +6,12 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator
 } from '@/components/ui/breadcrumb';
-import { useTranslations } from 'next-intl';
 
-export function Path() {
-  const t = useTranslations('projects');
+interface PathProps {
+  name: string;
+}
 
+export function Path({ name }: PathProps) {
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -19,7 +20,7 @@ export function Path() {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage>{t('title')}</BreadcrumbPage>
+          <BreadcrumbPage>{name}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

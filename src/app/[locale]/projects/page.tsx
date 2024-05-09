@@ -1,5 +1,6 @@
 import { Path } from '@/components/breadcrumb/path';
 import { SectionHeading } from '@/components/heading/section-heading';
+import { Projects } from '@/components/project/projects';
 import { ReposGithub, getGithubRepos } from '@/components/project/projects-github';
 import { SectionWrapper } from '@/components/section/section-wrapper';
 import {
@@ -7,9 +8,12 @@ import {
   QueryClient,
   dehydrate
 } from '@tanstack/react-query';
+import { getTranslations } from 'next-intl/server';
 
 export default async function ProjectsPage() {
   const queryClient = new QueryClient();
+  const t = await getTranslations('projects');
+  console.log(t);
 
   await queryClient.prefetchQuery({
     queryKey: ['githubRepos'],
@@ -18,13 +22,13 @@ export default async function ProjectsPage() {
 
   return (
     <main className='flex flex-col items-center px-5'>
-      
-      <SectionWrapper id='/' className='my-24
+      <SectionWrapper className='my-24
       sm:mb-20 sm:mt-40'>
-        <Path />
+        <Path name={t('title')} />
         <SectionHeading>
-        Projects
+          {t('title')}
         </SectionHeading>
+        <Projects />
         <HydrationBoundary state={dehydrate(queryClient)}>
           <ReposGithub />
         </HydrationBoundary>

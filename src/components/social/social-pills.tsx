@@ -19,7 +19,7 @@ export function SocialPills() {
         <span>Github</span>
       </Pill>
       <Pill 
-        href="#contact" 
+        href="/contact" 
       >
         <Mail className="size-7" />
           ecaleb.vz@gmail.com

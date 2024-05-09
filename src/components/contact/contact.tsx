@@ -21,10 +21,12 @@ import { useTransition } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { z } from 'zod';
+import { Path } from '../breadcrumb/path';
 
 export function Contact({ 
   title, description, labelEmail, labelMessage, labelSubmit
 }: ContactProps) {
+
   const [isPending, startTransition] = useTransition();
 
   const form = useForm<z.infer<typeof sendEmailFormSchema>>({
@@ -61,8 +63,9 @@ export function Contact({
 
   return (
     <SectionWrapper
-      id='contact'
+      className='my-28 sm:my-40'
     >
+      <Path name={title} />
       <SectionHeading>
         {title}
       </SectionHeading>

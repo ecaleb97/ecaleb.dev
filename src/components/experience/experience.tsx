@@ -1,3 +1,4 @@
+import { Path } from '@/components/breadcrumb/path';
 import { ExperienceList } from '@/components/experience/experience-list';
 import { SectionHeading } from '@/components/heading/section-heading';
 import { SectionWrapper } from '@/components/section/section-wrapper';
@@ -9,9 +10,9 @@ export function Experience() {
 
   return (
     <SectionWrapper
-      id="experience"
-      className='mb-20'
+      className='my-28 sm:my-40'
     >
+      <Path name={t('title')} />
       <SectionHeading>
         {t('title')}
       </SectionHeading>

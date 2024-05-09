@@ -3,19 +3,48 @@
 import { Stars } from '@/components/stars/stars';
 import { LanguagePicker } from '@/components/switcher/language-switcher';
 import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
-import { links } from '@/lib/constants';
 import emojiCaleb from '@/static/images/emoji-caleb.webp';
+import { type HeaderProps } from '@/types/types';
 import { Equal, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export function Header () {
+export function Header ({ 
+  home, 
+  projects, 
+  experience, 
+  about, 
+  contact 
+}: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toogleMobileMenu = () => {
     setIsOpen(prevState => !prevState);
   };
+
+  const links = [
+    {
+      name: home,
+      hash: '/',
+    },
+    {
+      name: projects,
+      hash: '/projects',
+    },
+    {
+      name: experience,
+      hash: '/experience',
+    },
+    {
+      name: about,
+      hash: '/about',
+    },
+    {
+      name: contact,
+      hash: '/contact',
+    }
+  ];
 
   return (
     <header className='z-[999] relative'>
@@ -43,7 +72,7 @@ export function Header () {
               >
                 <Link 
                   href={link.hash}
-                  className='flex w-full justify-center items-center p-3
+                  className='capitalize flex w-full justify-center items-center p-3
                   text-gray-800
                   hover:text-gray-950 transition dark:text-gray-600
                   dark:hover:text-gray-500 hover:scale-105 tracking-wider'
@@ -103,7 +132,7 @@ export function Header () {
                 key={link.hash} 
                 onClick={() => setIsOpen(prevState => !prevState)}
               >
-                <Link href={link.hash}>
+                <Link className='capitalize' href={link.hash}>
                   {link.name}
                 </Link>
               </li>
