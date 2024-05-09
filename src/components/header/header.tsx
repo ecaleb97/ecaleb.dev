@@ -1,6 +1,5 @@
 'use client';
 
-import { Stars } from '@/components/stars/stars';
 import { LanguagePicker } from '@/components/switcher/language-switcher';
 import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
 import emojiCaleb from '@/static/images/emoji-caleb.webp';

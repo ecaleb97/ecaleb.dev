@@ -3,7 +3,6 @@ import { Footer } from '@/components/footer/footer';
 import { Header } from '@/components/header/header';
 import { Providers } from '@/components/providers/providers';
 import { ThemeProvider } from '@/components/providers/theme-provider';
-import { Stars } from '@/components/stars/stars';
 import { LanguagePicker } from '@/components/switcher/language-switcher';
 import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
 import { Toaster } from '@/components/ui/sonner';
