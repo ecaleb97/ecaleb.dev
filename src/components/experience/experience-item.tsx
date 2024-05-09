@@ -6,13 +6,15 @@ interface ExperienceItemProps {
   company: string;
   date: string;
   description: string;
+  companyUrl: string;
 }
 
 export function ExperienceItem({ 
   jobTitle, 
   company, 
   date, 
-  description 
+  description,
+  companyUrl
 }: ExperienceItemProps) {
   return (
     <li className="ms-5 mt-1">
@@ -37,7 +39,7 @@ export function ExperienceItem({
           {jobTitle}
         </h3>
         <a
-          href='/'
+          href={companyUrl}
           target="_blank"
           rel="noopener"
           className="group flex w-max items-center text-pretty text-sm 

@@ -9,25 +9,29 @@ export function ExperienceList() {
       title: t('job1.title'),
       company: t('job1.company'),
       date: t('job1.date'),
-      description: t('job1.description')
+      description: t('job1.description'),
+      companyUrl: '/'
     },
     {
       title: t('job2.title'),
       company: t('job2.company'),
       date: t('job2.date'),
-      description: t('job2.description')
+      description: t('job2.description'),
+      companyUrl: 'https://www.indracompany.com/'
     },
     {
       title: t('job3.title'),
       company: t('job3.company'),
       date: t('job3.date'),
-      description: t('job3.description')
+      description: t('job3.description'),
+      companyUrl: 'https://www.k-tuin.com/'
     },
     {
       title: t('job4.title'),
       company: t('job4.company'),
       date: t('job4.date'),
-      description: t('job4.description')
+      description: t('job4.description'),
+      companyUrl: '/'
     }
   ];
 
@@ -43,6 +47,7 @@ export function ExperienceList() {
           company={item.company}
           date={item.date}
           description={item.description}
+          companyUrl={item.companyUrl}
         />
       ))}
     </ol>
