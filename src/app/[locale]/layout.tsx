@@ -21,11 +21,33 @@ export const metadata: Metadata = {
     }
   },
   title: {
-    template: '%s | ',
-    default: 'Caleb Personal Portfolio',
+    template: '%s | Caleb Zamalloa',
+    default: 'Caleb Zamalloa',
   },
-  description: `Caleb is a full-stack developer who 
-  enjoys building websites and apps.`,
+  description: 'Developer with experience in multiple technologies and frameworks.',
+  openGraph: {
+    title: 'Caleb Zamalloa',
+    description: 'Developer with experience in multiple technologies and frameworks.',
+    url: 'https://ecaleb.dev',
+    siteName: 'Caleb Zamalloa',
+    locale: 'en_US',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    }
+  },
+  twitter: {
+    title: 'Caleb Zamalloa',
+    card: 'summary_large_image',
+  },
   icons: {
     icon: {
       url: '/favicon.ico',
@@ -70,7 +92,6 @@ export default function RootLayout({
             md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]
             dark:bg-transparent' 
             />
-            <Stars />
             <Header
               home={t('home')}
               projects={t('projects')}

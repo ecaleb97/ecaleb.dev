@@ -112,10 +112,10 @@ export function Header ({
         </div>
       </div>
       {isOpen && (
-        <nav className='bg-[#F4EFF0] w-full min-h-screen fixed top-0
-        bottom-0 sm:hidden dark:bg-customDark dark:text-[#fbfbfb] z-[999]'
+        <nav 
+          className='bg-[#F4EFF0] w-full min-h-screen fixed top-0
+          bottom-0 sm:hidden dark:bg-customDark dark:text-[#fbfbfb] z-[999]'
         >
-          <Stars />
           <div className='h-[3rem] flex justify-end items-center pr-4 py-8'>
             <button 
               className='size-6 text-[#333336] dark:text-[#fbfbfb]' 
