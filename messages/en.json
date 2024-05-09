@@ -1,4 +1,11 @@
 {
+  "nav": {
+    "home": "home",
+    "projects": "projects",
+    "experience": "experience",
+    "about": "about",
+    "contact": "contact"
+  },
   "intro": {
     "name": "Hey, I'm Caleb",
     "description": "Welcome to my portfolio. I'm a web developer with a passion for creating amazing user experiences.",

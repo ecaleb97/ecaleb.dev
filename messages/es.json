@@ -1,4 +1,11 @@
 {
+  "nav": {
+    "home": "inicio",
+    "projects": "proyectos",
+    "experience": "experiencia",
+    "about": "sobre mí",
+    "contact": "contacto"
+  },
   "intro": {
     "name": "Hola, soy Caleb.",
     "description": "Soy desarrollador web fullstack",
