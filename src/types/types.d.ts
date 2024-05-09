@@ -1,5 +1,12 @@
 import { StaticImageData } from 'next/image';
 
+export interface HeaderProps {
+  home: string;
+  projects: string;
+  experience: string;
+  about: string;
+  contact: string;
+}
 export interface ChildrenProps {
   children: React.ReactNode;
 }
@@ -34,7 +41,6 @@ export interface ContactProps {
 export interface SectionWrapperProps {
   children: React.ReactNode;
   className?: string;
-  id: string;
 }
 
 interface Variant {
