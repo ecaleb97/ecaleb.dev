@@ -8,12 +8,9 @@ import {
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
-import { Popover } from '@/components/ui/popover';
 import emojiCaleb from '@/static/images/emoji-caleb.webp';
-import { PopoverContent, PopoverTrigger } from '@radix-ui/react-popover';
 import { Equal } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -121,7 +118,7 @@ export function Header () {
             </DropdownMenuTrigger>
             <DropdownMenuContent
               className='border rounded-md 
-              m-4 p-4 pr-[87px] dark:bg-black md:hidden'
+              m-4 p-4 pr-[80px] dark:bg-black md:hidden'
             >
               <DropdownMenuGroup>
                 {links.map((link) => (
