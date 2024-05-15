@@ -121,7 +121,7 @@ export function Header () {
             </DropdownMenuTrigger>
             <DropdownMenuContent
               className='border rounded-md 
-              m-4 p-4 pr-[87px] bg-black md:hidden'
+              m-4 p-4 pr-[87px] dark:bg-black md:hidden'
             >
               <DropdownMenuGroup>
                 {links.map((link) => (
