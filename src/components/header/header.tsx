@@ -1,5 +1,6 @@
 'use client';
 
+import { CommandMenu } from '@/components/command/command';
 import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
 import emojiCaleb from '@/static/images/emoji-caleb.webp';
 import { Equal, X } from 'lucide-react';
@@ -37,8 +38,8 @@ export function Header () {
   ];
 
   return (
-    <header className='z-[999] relative'>
-      <div className='hidden sm:block'>
+    <header className='z-[999] relative w-screen flex justify-center md:pt-8'>
+      <div className='hidden fixed md:flex gap-4 items-center justify-evenly px-4'>
         {/* <div
           className='fixed top-0 left-1/2 h-[4.5rem]
           -translate-x-1/2 w-full rounded-none border border-white
@@ -47,14 +48,14 @@ export function Header () {
           sm:rounded-full'
         /> */}
         <nav 
-          className='flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2
-          py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0 bg-[#fafafa]/90
+          className='flex h-12
+          py-2 md:py-0 bg-[#fafafa]/90
           dark:bg-black/90 rounded-full px-4'
         >
           <ul
             className='flex w-[22rem] items-center justify-center
             gap-y-1 text-[0.9rem] font-medium
-            sm:w-[initial] sm:flex-nowrap sm:gap-5'
+            sm:w-[initial] md:flex-nowrap md:gap-3'
           >
             {links.map((link) => (
               <li 
@@ -64,7 +65,7 @@ export function Header () {
                 <Link 
                   href={link.hash}
                   className='capitalize flex w-full justify-center items-center p-3
-                  hover:scale-105 tracking-wider text-lg'
+                  hover:scale-105 tracking-wider text-base'
                 >
                   {link.name}
                 </Link>
@@ -75,23 +76,27 @@ export function Header () {
             </li>
           </ul>
         </nav>
+        <CommandMenu />
       </div>
       <div className='bg-transparent fixed w-screen h-[3rem] flex
-        items-center justify-between px-4 py-8 sm:hidden'>
+        items-center justify-between px-4 py-8 md:hidden'>
         <div 
           className='size-9 border border-gray-500 
           dark:border-none rounded-full'
         >
-          <Image
-            src={emojiCaleb}
-            alt="Caleb's profile picture"
-            className='rounded-full'
-            width={36}
-            height={36}
-            priority
-          />
+          <Link href='/'>
+            <Image
+              src={emojiCaleb}
+              alt="Caleb's profile picture"
+              className='rounded-full'
+              width={36}
+              height={36}
+              priority
+            />
+          </Link>
         </div>
-        <div className='flex gap-3 items-center'>
+        <div className='flex gap-2 items-center'>
+          <CommandMenu />
           <ThemeSwitcher variant='default' />
           <button 
             className='size-6 dark:text-white' 
@@ -105,7 +110,7 @@ export function Header () {
       {isOpen && (
         <nav 
           className='bg-[#F4EFF0] w-full min-h-screen fixed top-0
-          bottom-0 sm:hidden dark:bg-customDark dark:text-[#fbfbfb] z-[999]'
+          bottom-0 md:hidden dark:bg-customDark dark:text-[#fbfbfb] z-[999]'
         >
           <div className='h-[3rem] flex justify-end items-center pr-4 py-8'>
             <button 

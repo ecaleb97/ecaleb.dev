@@ -34,27 +34,41 @@ export function Contact() {
     }
   });
 
-  const onSubmit = async (values: z.infer<typeof sendEmailFormSchema>) => {
+  const onSubmit = (values: z.infer<typeof sendEmailFormSchema>) => {
     // console.log(values);
     const { email, message } = values;
     startTransition(() => {
-      async function sendEmail() {
-        try {
-          await fetch('/api/send', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ email, message })
-          });
+      fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email, message })
+      })
+        .then(() => {
           toast.success('Message sent successfully');
           form.reset();
-        } catch (error) {
-          console.error(error);
+        })
+        .catch(() => {
           toast.error('An error occurred while sending the message');
-        }
-      }
-      sendEmail();
+        });
+      // async function sendEmail() {
+      //   try {
+      //     await fetch('/api/send', {
+      //       method: 'POST',
+      //       headers: {
+      //         'Content-Type': 'application/json'
+      //       },
+      //       body: JSON.stringify({ email, message })
+      //     });
+      //     toast.success('Message sent successfully');
+      //     form.reset();
+      //   } catch (error) {
+      //     console.error(error);
+      //     toast.error('An error occurred while sending the message');
+      //   }
+      // }
+      // sendEmail();
     });
   };
 
@@ -139,7 +153,7 @@ export function Contact() {
             type='submit'
             disabled={isPending}
           >
-            Send Message
+            {isPending ? 'Sending...' : 'Send message'}
           </Button>
         </form>
       </Form>

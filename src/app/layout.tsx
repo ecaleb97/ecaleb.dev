@@ -1,4 +1,5 @@
 import '@/app/globals.css';
+import { CommandMenu } from '@/components/command/command';
 import { Footer } from '@/components/footer/footer';
 import { Header } from '@/components/header/header';
 import { Providers } from '@/components/providers/providers';
@@ -85,7 +86,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${raleway.className} antialiased bg-[#F4EFF0] 
+        className={`${raleway.className} antialiased bg-white
         sm:bg-gray-100 text-gray-950 relative
         min-h-screen dark:bg-customDark dark:text-white`}
       >
@@ -96,7 +97,6 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            
             <Header />
             {children}
             <Footer />
