@@ -91,7 +91,7 @@ export function CommandMenu() {
       <Button 
         onClick={() => setOpen((open) => !open)} 
         className='text-sm text-muted-foreground border 
-        dark:border-s flex gap-8 px-2 py-1'
+        dark:border-s flex gap-6 px-2 py-1'
       >
         Search...{' '}
         <kbd 
