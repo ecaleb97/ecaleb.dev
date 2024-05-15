@@ -10,7 +10,7 @@ export function ProjectItem({
 }: ProjectProps) {
   return (
     <li 
-      className='w-full rounded-lg border border-[#dbe5e5]
+      className='w-full rounded-lg border border-[#dbe5e5] dark:border-[#2e2e2e]
       hover:scale-105 transition cursor-pointer'>
       <div className='w-full rounded-lg'>
         <Image 
@@ -23,7 +23,7 @@ export function ProjectItem({
         />
         <article 
           className='w-full px-4 py-6 rounded-b-lg flex flex-col gap-6
-          bg-gray-100 dark:bg-customDark dark:text-[#fafafa]'
+          bg-gray-100 dark:bg-[#0a0a0a] dark:text-[#fafafa]'
         >
           <header>
             <h3 

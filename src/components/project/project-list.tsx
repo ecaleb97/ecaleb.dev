@@ -1,5 +1,6 @@
 import { ProjectItem } from '@/components/project/project-item';
 import { project1, project2 } from '@/lib/data';
+import ecommerceDark from '@/static/images/ecommerceDark.webp';
 import ecommerceLight from '@/static/images/ecommerceLight.webp';
 import { ProjectProps } from '@/types/types';
 
@@ -9,7 +10,7 @@ export function ProjectList() {
       title: 'Project 1',
       description: 'Here are some of the projects I have worked on.',
       tags: project1,
-      imageUrl: ecommerceLight,
+      imageUrl: ecommerceDark,
     },
     {
       title: 'Project 2',

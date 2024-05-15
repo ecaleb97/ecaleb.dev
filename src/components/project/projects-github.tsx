@@ -69,7 +69,7 @@ export function ReposGithub() {
           <li
             key={repo.html_url}
             className="flex flex-col space-y-2 rounded-md border 
-          border-neutral-300 p-3 dark:border-neutral-800"
+          border-neutral-300 p-3 dark:border-neutral-800 dark:bg-[#0a0a0a]"
           >
             <div className="flex w-full items-center justify-between">
               <a

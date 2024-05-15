@@ -22,7 +22,7 @@ export function ThemeSwitcher({ variant }: Variant) {
         <Button 
           variant={variant} 
           size="icon" 
-          className='dark:border-gray-300 text-black bg-transparent dark:text-white sm:dark:text-gray-500 border-none hover:bg-transparent'
+          className='dark:border-gray-300 text-black bg-transparent dark:text-white border-none hover:bg-transparent'
         >
           <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
@@ -32,19 +32,16 @@ export function ThemeSwitcher({ variant }: Variant) {
       <DropdownMenuContent className='dark:bg-customDark border border-gray-300'>
         <DropdownMenuItem 
           onClick={() => setTheme('light')}
-          className='dark:hover:bg-gray-600'
         >
           Light
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => setTheme('dark')}
-          className='dark:hover:bg-gray-600'
         >
           Dark
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => setTheme('system')}
-          className='dark:hover:bg-gray-600'
         >
           System
         </DropdownMenuItem>

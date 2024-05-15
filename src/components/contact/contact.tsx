@@ -67,7 +67,7 @@ export function Contact() {
         Contact
       </SectionHeading>
       <p className='tracking-wider text-sm sm:text-base leading-7'>
-        Please contact me if you have any questions or would like to work together.
+        Please contact me if you have any questions or would like to work together {' '}
         <a
           href="mailto:ecaleb.vz@gmail.com"
           className={`underline font-bold ${styles.textAnimate} 
