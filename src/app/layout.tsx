@@ -1,5 +1,5 @@
 import '@/app/globals.css';
-import { CommandMenu } from '@/components/command/command';
+import { CommandMenu } from '@/components/command/command-menu';
 import { Footer } from '@/components/footer/footer';
 import { Header } from '@/components/header/header';
 import { Providers } from '@/components/providers/providers';

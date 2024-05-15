@@ -8,7 +8,7 @@ export function Intro() {
     <section 
       id='home'
       className='w-full max-w-[50rem] flex flex-col gap-5 my-28
-      sm:mb-20 sm:mt-40'
+      sm:mb-20 '
     >
       <Image
         src={calebPortrait}

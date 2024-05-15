@@ -5,7 +5,7 @@ import { Path } from '../breadcrumb/path';
 export function About() {
   return (
     <SectionWrapper
-      className='my-28 sm:my-40'
+      className='my-28'
     >
       <Path name='About' />
       <SectionHeading>

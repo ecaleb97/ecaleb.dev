@@ -6,7 +6,7 @@ import { SectionWrapper } from '@/components/section/section-wrapper';
 export function Experience() {
   return (
     <SectionWrapper
-      className='my-28 sm:my-40'
+      className='my-28'
     >
       <Path name='Experience' />
       <SectionHeading>

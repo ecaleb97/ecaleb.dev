@@ -1,41 +1,56 @@
 'use client';
 
-import { CommandMenu } from '@/components/command/command';
+import { CommandMenu } from '@/components/command/command-menu';
 import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
+import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger
+} from '@/components/ui/dropdown-menu';
+import { Popover } from '@/components/ui/popover';
 import emojiCaleb from '@/static/images/emoji-caleb.webp';
-import { Equal, X } from 'lucide-react';
+import { PopoverContent, PopoverTrigger } from '@radix-ui/react-popover';
+import { Equal } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Fragment, useCallback, useState } from 'react';
+
+const links = [
+  {
+    name: 'Home',
+    hash: '/',
+  },
+  {
+    name: 'Projects',
+    hash: '/projects',
+  },
+  {
+    name: 'Experience',
+    hash: '/experience',
+  },
+  {
+    name: 'About',
+    hash: '/about',
+  },
+  {
+    name: 'Contact',
+    hash: '/contact',
+  },
+];
 
 export function Header () {
-  const [isOpen, setIsOpen] = useState(false);
-  const toogleMobileMenu = () => {
-    setIsOpen(prevState => !prevState);
-  };
+  const router = useRouter();
+  const [open, setOpen] = useState(false);
 
-  const links = [
-    {
-      name: 'Home',
-      hash: '/',
-    },
-    {
-      name: 'Projects',
-      hash: '/projects',
-    },
-    {
-      name: 'Experience',
-      hash: '/experience',
-    },
-    {
-      name: 'About',
-      hash: '/about',
-    },
-    {
-      name: 'Contact',
-      hash: '/contact',
-    },
-  ];
+  const runCommand = useCallback((command: () => unknown) => {
+    setOpen(false);
+    command();
+  }, []);
 
   return (
     <header className='z-[999] relative w-screen flex justify-center md:pt-8'>
@@ -98,45 +113,33 @@ export function Header () {
         <div className='flex gap-2 items-center'>
           <CommandMenu />
           <ThemeSwitcher variant='default' />
-          <button 
-            className='size-6 dark:text-white' 
-            onClick={toogleMobileMenu}
-            aria-label='Toggle mobile menu'
-          >
-            {isOpen ? <X /> : <Equal />}
-          </button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild className='border-none px-0 bg-none'>
+              <Button variant='default' className='text-black dark:text-white'>
+                <Equal />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              className='border rounded-md 
+              m-4 p-4 pr-[87px] bg-black md:hidden'
+            >
+              <DropdownMenuGroup>
+                {links.map((link) => (
+                  <Fragment key={link.hash}>
+                    <DropdownMenuItem 
+                      key={link.hash} 
+                      className='text-lg'
+                      onSelect={() => runCommand(() => router.push(link.hash))}
+                    >
+                      <span>{link.name}</span>
+                    </DropdownMenuItem>
+                  </Fragment>
+                ))}
+              </DropdownMenuGroup>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
-      {isOpen && (
-        <nav 
-          className='bg-[#F4EFF0] w-full min-h-screen fixed top-0
-          bottom-0 md:hidden dark:bg-customDark dark:text-[#fbfbfb] z-[999]'
-        >
-          <div className='h-[3rem] flex justify-end items-center pr-4 py-8'>
-            <button 
-              className='size-6 text-[#333336] dark:text-[#fbfbfb]' 
-              onClick={toogleMobileMenu}
-            >
-              <X />
-            </button>
-          </div>
-          <ul className='text-[#333336] dark:text-[#fbfbfb] text-3xl pl-10 font-semibold
-          mt-10 flex flex-col gap-8'
-          >
-            {links.map((link) => (
-              <li 
-                key={link.hash} 
-                onClick={() => setIsOpen(prevState => !prevState)}
-              >
-                <Link className='capitalize' href={link.hash}>
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
     </header>
   );
 }
-

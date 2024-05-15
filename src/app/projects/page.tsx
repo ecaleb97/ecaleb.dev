@@ -25,8 +25,7 @@ export default async function ProjectsPage() {
 
   return (
     <main className='flex flex-col items-center px-5'>
-      <SectionWrapper className='my-24
-      sm:mb-20 sm:mt-40'>
+      <SectionWrapper className='my-28'>
         <Path name='Projects' />
         <SectionHeading>
           Projects

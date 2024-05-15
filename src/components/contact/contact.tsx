@@ -74,7 +74,7 @@ export function Contact() {
 
   return (
     <SectionWrapper
-      className='my-28 sm:my-40'
+      className='my-28'
     >
       <Path name='Contact' />
       <SectionHeading>
