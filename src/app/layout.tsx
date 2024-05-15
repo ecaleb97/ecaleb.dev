@@ -3,12 +3,9 @@ import { Footer } from '@/components/footer/footer';
 import { Header } from '@/components/header/header';
 import { Providers } from '@/components/providers/providers';
 import { ThemeProvider } from '@/components/providers/theme-provider';
-import { LanguagePicker } from '@/components/switcher/language-switcher';
-import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
 import { Toaster } from '@/components/ui/sonner';
 import { raleway } from '@/lib/fonts';
 import type { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ecaleb.dev'),
@@ -82,19 +79,15 @@ export const metadata: Metadata = {
 
 interface Props {
   children: React.ReactNode;
-  params: { locale: string };
 }
 
 export default function RootLayout({
   children,
-  params: { locale }
 }: Readonly<
   Props
 >) {
-  const t = useTranslations('nav');
-
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
       <body
         className={`${raleway.className} antialiased bg-[#F4EFF0] 
         sm:bg-gray-100 text-gray-950 relative
@@ -117,20 +110,8 @@ export default function RootLayout({
             md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]
             dark:bg-transparent' 
             />
-            <Header
-              home={t('home')}
-              projects={t('projects')}
-              experience={t('experience')}
-              about={t('about')}
-              contact={t('contact')}  
-            />
+            <Header />
             {children}
-            <div className='hidden sm:block fixed bottom-4 right-4'>
-              <ThemeSwitcher variant='outline' />
-            </div>
-            <div className='hidden sm:block fixed bottom-4 left-4'>
-              <LanguagePicker variant='outline' />
-            </div>
             <Footer />
             <Toaster />
           </ThemeProvider>

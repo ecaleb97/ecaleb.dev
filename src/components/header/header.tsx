@@ -1,46 +1,37 @@
 'use client';
 
-import { LanguagePicker } from '@/components/switcher/language-switcher';
 import { ThemeSwitcher } from '@/components/switcher/theme-switcher';
 import emojiCaleb from '@/static/images/emoji-caleb.webp';
-import { type HeaderProps } from '@/types/types';
 import { Equal, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export function Header ({ 
-  home, 
-  projects, 
-  experience, 
-  about, 
-  contact 
-}: HeaderProps) {
+export function Header () {
   const [isOpen, setIsOpen] = useState(false);
-
   const toogleMobileMenu = () => {
     setIsOpen(prevState => !prevState);
   };
 
   const links = [
     {
-      name: home,
+      name: 'Home',
       hash: '/',
     },
     {
-      name: projects,
+      name: 'Projects',
       hash: '/projects',
     },
     {
-      name: experience,
+      name: 'Experience',
       hash: '/experience',
     },
     {
-      name: about,
+      name: 'About',
       hash: '/about',
     },
     {
-      name: contact,
+      name: 'Contact',
       hash: '/contact',
     }
   ];
@@ -99,7 +90,6 @@ export function Header ({
           />
         </div>
         <div className='flex gap-3 items-center'>
-          <LanguagePicker variant='default' />
           <ThemeSwitcher variant='default' />
           <button 
             className='size-6 dark:text-white' 

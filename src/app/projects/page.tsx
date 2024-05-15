@@ -9,7 +9,6 @@ import {
   dehydrate
 } from '@tanstack/react-query';
 import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Projects',
@@ -18,8 +17,6 @@ export const metadata: Metadata = {
 
 export default async function ProjectsPage() {
   const queryClient = new QueryClient();
-  const t = await getTranslations('projects');
-  console.log(t);
 
   await queryClient.prefetchQuery({
     queryKey: ['githubRepos'],
@@ -30,9 +27,9 @@ export default async function ProjectsPage() {
     <main className='flex flex-col items-center px-5'>
       <SectionWrapper className='my-24
       sm:mb-20 sm:mt-40'>
-        <Path name={t('title')} />
+        <Path name='Projects' />
         <SectionHeading>
-          {t('title')}
+          Projects
         </SectionHeading>
         <Projects />
         <HydrationBoundary state={dehydrate(queryClient)}>

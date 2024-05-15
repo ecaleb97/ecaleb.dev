@@ -15,7 +15,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { sendEmailFormSchema } from '@/schemas/send-email';
-import { type ContactProps } from '@/types/types';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTransition } from 'react';
 import { useForm } from 'react-hook-form';
@@ -23,9 +22,7 @@ import { toast } from 'sonner';
 import { z } from 'zod';
 import { Path } from '../breadcrumb/path';
 
-export function Contact({ 
-  title, description, labelEmail, labelMessage, labelSubmit
-}: ContactProps) {
+export function Contact() {
 
   const [isPending, startTransition] = useTransition();
 
@@ -65,12 +62,12 @@ export function Contact({
     <SectionWrapper
       className='my-28 sm:my-40'
     >
-      <Path name={title} />
+      <Path name='Contact' />
       <SectionHeading>
-        {title}
+        Contact
       </SectionHeading>
       <p className='tracking-wider text-sm sm:text-base leading-7'>
-        {description}
+        Please contact me if you have any questions or would like to work together.
         <a
           href="mailto:ecaleb.vz@gmail.com"
           className={`underline font-bold ${styles.textAnimate} 
@@ -96,7 +93,7 @@ export function Contact({
                     htmlFor='email'
                     className='tracking-wider'
                   >
-                    {labelEmail}
+                    Email
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -121,7 +118,7 @@ export function Contact({
                     htmlFor='message'
                     className='tracking-wider'
                   >
-                    {labelMessage}
+                    Message
                   </FormLabel>
                   <FormControl>
                     <Textarea
@@ -141,7 +138,7 @@ export function Contact({
             type='submit'
             disabled={isPending}
           >
-            {labelSubmit}
+            Send Message
           </Button>
         </form>
       </Form>

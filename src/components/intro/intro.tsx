@@ -1,12 +1,9 @@
 import styles from '@/components/intro/intro.module.css';
 import { SocialPills } from '@/components/social/social-pills';
 import calebPortrait from '@/static/images/me.webp';
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 export function Intro() {
-  const t = useTranslations('intro');
-
   return (
     <section 
       id='home'
@@ -26,18 +23,16 @@ export function Intro() {
         via-[#00affa] via-30%
         to-[#fff08b] to-80%`}
       >
-        {t('name')}
+        Hey, I&apos;m Caleb
       </h1>
       <p className='text-base tracking-wider leading-8 pb-3 text-pretty'>
-        {t('description')}
+      Welcome to my portfolio. I&apos;m a web developer with a passion for creating amazing user experiences.
         <br />
-        {t('description2')}
+        And here, I share what I&apos;ve been working on recently and things I learned along the way.
         <br />
-        {t('description3')}
+        Besides software, another of my passions are mathematics and reading. I love teaching and learning new things every day.
       </p>
       <SocialPills />
     </section>
   );
 }
-
-// text-lg sm:text-xl font-light sm:font-normal !leading-[1.5] tracking-wider

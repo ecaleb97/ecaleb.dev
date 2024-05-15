@@ -2,20 +2,18 @@ import { ProjectItem } from '@/components/project/project-item';
 import { project1, project2 } from '@/lib/data';
 import ecommerceLight from '@/static/images/ecommerceLight.webp';
 import { ProjectProps } from '@/types/types';
-import { useTranslations } from 'next-intl';
 
 export function ProjectList() {
-  const t = useTranslations('projects');
   const projectsData = [
     {
-      title: t('projectsItems.project1.title'),
-      description: t('projectsItems.project1.description'),
+      title: 'Project 1',
+      description: 'Here are some of the projects I have worked on.',
       tags: project1,
       imageUrl: ecommerceLight,
     },
     {
-      title: t('projectsItems.project2.title'),
-      description: t('projectsItems.project1.description'),
+      title: 'Project 2',
+      description: 'Here are some of the projects I have worked on.',
       tags: project2,
       imageUrl: ecommerceLight,
     },
