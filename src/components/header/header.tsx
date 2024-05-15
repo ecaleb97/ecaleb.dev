@@ -33,7 +33,7 @@ export function Header () {
     {
       name: 'Contact',
       hash: '/contact',
-    }
+    },
   ];
 
   return (
@@ -71,6 +71,9 @@ export function Header () {
                 </Link>
               </li>
             ))}
+            <li>
+              <ThemeSwitcher variant='default' />
+            </li>
           </ul>
         </nav>
       </div>

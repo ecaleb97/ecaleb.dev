@@ -134,7 +134,8 @@ export function Contact() {
             />
           </div>
           <Button 
-            className='dark:bg-[#fafafa] hover:scale-105 tracking-wider'
+            className='dark:bg-[#fafafa] hover:scale-105 tracking-wider
+            bg-primary hover:bg-primary/90'
             type='submit'
             disabled={isPending}
           >
