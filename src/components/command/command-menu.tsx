@@ -16,6 +16,7 @@ import { Github } from '@/components/icons/github';
 import { Linkedin } from '@/components/icons/linkedin';
 import { Button } from '@/components/ui/button';
 import {
+  BookUser,
   CircleUser,
   Code,
   Laptop,
@@ -66,6 +67,11 @@ export function CommandMenu() {
       icon: Linkedin,
       hash: 'https://www.linkedin.com/in/caleb-villanueva-zamalloa/'
     },
+    {
+      name: 'Resume',
+      icon: BookUser,
+      hash: 'https://cv.ecaleb.dev/'
+    }
   ];
 
   useEffect(() => {
