@@ -126,7 +126,9 @@ export function Header () {
                     <DropdownMenuItem 
                       key={link.hash} 
                       className='text-lg'
-                      onSelect={() => runCommand(() => router.push(link.hash))}
+                      onSelect={() => runCommand(() => {
+                        router.push(link.hash);
+                      })}
                     >
                       <span>{link.name}</span>
                     </DropdownMenuItem>
