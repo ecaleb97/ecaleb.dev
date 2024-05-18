@@ -46,3 +46,11 @@ export interface SectionWrapperProps {
 interface Variant {
   variant?: 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link';
 }
+
+export interface GithubResultApi {
+  name:                        string;
+  html_url:                    string;
+  description:                 string;
+  homepage:                    string;
+  topics:                      Array<string>;
+}

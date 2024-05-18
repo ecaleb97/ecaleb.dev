@@ -1,5 +1,6 @@
-import { GithubResultApi } from '@/components/project/projects-github';
+import { GithubResultApi } from '@/types/types';
 import { ArrowUpRight, Star as StarIcon } from 'lucide-react';
+import { Github } from '../icons/github';
 
 export function DefaultProjects() {
   const data: Array<GithubResultApi>  = [
@@ -7,8 +8,7 @@ export function DefaultProjects() {
       name: 'project-1',
       description: 'description-1',
       html_url: '',
-      stargazers_count: 1,
-      language: 'TypeScript',
+      homepage: '',
       topics: ['react', 'typescript'],
     },
   ];
@@ -23,7 +23,7 @@ export function DefaultProjects() {
         >
           <div className="flex w-full items-center justify-between">
             <a
-              href={repo.html_url}
+              href={repo.homepage}
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center space-x-2 font-medium duration-100 hover:opacity-80"
@@ -36,14 +36,22 @@ export function DefaultProjects() {
               />
             </a>
             <span
-              className="group flex cursor-default items-center space-x-2 text-neutral-600 dark:text-neutral-400"
+              className="group flex cursor-default items-center space-x-2 text-neutral-600 dark:text-neutral-400 rounded-md duration-100 hover:opacity-80"
             >
-              <StarIcon
-                size={14}
-                strokeWidth={1.5}
-                className="duration-200 group-hover:text-yellow-600"
-              />
-              <p className="font-mono text-xs">{repo.stargazers_count}</p>
+              <a 
+                href={repo.html_url} 
+                target='_blank' 
+                rel='noreferrer noopener' 
+                className='text-sm flex items-center gap-2'
+              >
+                Source Code
+                <Github className='size-5' />
+                <ArrowUpRight
+                  size={12}
+                  strokeWidth={1.5}
+                  className="opacity-70 duration-200 group-hover:translate-x-[1.3px] group-hover:opacity-100"
+                />
+              </a>
             </span>
           </div>
           <p className="text-sm text-neutral-500 dark:text-neutral-400">{repo.description}</p>
