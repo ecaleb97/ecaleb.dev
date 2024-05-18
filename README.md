@@ -1,5 +1,7 @@
 # Caleb Zamalloa - Personal Website built using Next.js and Github API
 
+![App Screenshot](./public/portfolio.png)
+
 Stack used in this project
 
 -   Next.js
@@ -40,7 +42,3 @@ Start the server
 ```bash
   pnpm dev
 ```
-
-## Screenshots
-
-![App Screenshot](./public/portfolio.png)
