@@ -91,7 +91,7 @@ export function ReposGithub() {
               <span
                 className="group flex cursor-default items-center space-x-2 text-neutral-600 dark:text-neutral-400"
               >
-                <a href={repo.html_url} className='text-sm flex items-center gap-2'>
+                <a href={repo.html_url} className='text-xs flex items-center gap-2'>
                   Source Code
                   <Github className='size-5' />
                   <ArrowUpRight
