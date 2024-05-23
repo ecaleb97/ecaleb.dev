@@ -37,8 +37,8 @@ export function Contact() {
   const onSubmit = (values: z.infer<typeof sendEmailFormSchema>) => {
     // console.log(values);
     const { email, message } = values;
-    startTransition(() => {
-      fetch('/api/send', {
+    startTransition(async () => {
+      await fetch('/api/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -52,23 +52,6 @@ export function Contact() {
         .catch(() => {
           toast.error('An error occurred while sending the message');
         });
-      // async function sendEmail() {
-      //   try {
-      //     await fetch('/api/send', {
-      //       method: 'POST',
-      //       headers: {
-      //         'Content-Type': 'application/json'
-      //       },
-      //       body: JSON.stringify({ email, message })
-      //     });
-      //     toast.success('Message sent successfully');
-      //     form.reset();
-      //   } catch (error) {
-      //     console.error(error);
-      //     toast.error('An error occurred while sending the message');
-      //   }
-      // }
-      // sendEmail();
     });
   };
 
