@@ -15,6 +15,7 @@ export interface PillProps {
   href: string;
   children: React.ReactNode;
   className?: string;
+  target?: string;
 }
 
 export interface ProjectProps {
