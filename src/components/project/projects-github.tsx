@@ -5,22 +5,10 @@ import { DefaultProjects } from '@/components/project/default-projects';
 import { SkeletonCard } from '@/components/project/skeleton-card';
 import { GithubResultApi } from '@/types/types';
 import { useQuery } from '@tanstack/react-query';
-import { ArrowUpRight, Star as StarIcon } from 'lucide-react';
-
-// export interface GithubResultApi {
-//   name: string;
-//   description: string;
-//   topics: Array<string>;
-//   html_url: string;
-//   homepage: string;
-//   stargazers_count: number;
-//   language: string;
-//   languages_url: string;
-// }
+import { ArrowUpRight, Star } from 'lucide-react';
 
 export async function getGithubRepos() {
   const githubUrl = 'https://api.github.com/users/ecaleb97/repos?type=owner&sort=updated';
-  // const githubUrl = '';
   const response = await fetch(githubUrl);
   const data = await response.json();
   if (!response.ok) {
