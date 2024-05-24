@@ -1,3 +1,4 @@
+import { DefaultProjects } from '@/components/project/default-projects';
 import { ProjectItem } from '@/components/project/project-item';
 import { project1, project2 } from '@/lib/data';
 import ecommerceDark from '@/static/images/ecommerceDark.webp';
@@ -21,16 +22,20 @@ export function ProjectList() {
   ] satisfies ProjectProps[];
 
   return (
-    <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 tracking-wider">
-      {projectsData.map((project) => (
-        <ProjectItem
-          key={project.title}
-          title={project.title}
-          description={project.description}
-          tags={project.tags}
-          imageUrl={project.imageUrl}
-        />
-      ))}
-    </ul>
+    <>
+      <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 tracking-wider">
+        {projectsData.map((project) => (
+          <ProjectItem
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            imageUrl={project.imageUrl}
+          />
+        ))}
+      </ul>
+      <DefaultProjects />
+    </>
+    
   );
 }

@@ -1,8 +1,6 @@
 import '@/app/globals.css';
-import { CommandMenu } from '@/components/command/command-menu';
 import { Footer } from '@/components/footer/footer';
 import { Header } from '@/components/header/header';
-import { Providers } from '@/components/providers/providers';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { Toaster } from '@/components/ui/sonner';
 import { raleway } from '@/lib/fonts';
@@ -90,19 +88,17 @@ export default function RootLayout({
         sm:bg-gray-100 text-gray-950 relative
         min-h-screen dark:bg-customDark dark:text-white`}
       >
-        <Providers>
-          <ThemeProvider
-            attribute='class'
-            defaultTheme='system'
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Header />
-            {children}
-            <Footer />
-            <Toaster />
-          </ThemeProvider>
-        </Providers>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer />
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
