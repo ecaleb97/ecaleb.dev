@@ -15,7 +15,7 @@ export function DefaultProjects() {
       name: 'get_next_line',
       description: '📚 A program that reads a file line by line.',
       html_url: 'https://github.com/ecaleb97/get_next_line',
-      homepage: '',
+      homepage: 'https://github.com/ecaleb97/get_next_line',
       topics: ['c', '42school', 'get_next_line'],
     },
     {
