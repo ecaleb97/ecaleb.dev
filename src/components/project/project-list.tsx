@@ -8,14 +8,14 @@ import { ProjectProps } from '@/types/types';
 export function ProjectList() {
   const projectsData = [
     {
-      title: 'Project 1',
-      description: 'Here are some of the projects I have worked on.',
+      title: 'Hack4Good Telefonica 2024 (Winners)',
+      description: 'This project consist of promoting tourism in Spain through a web application.',
       tags: project1,
       imageUrl: ecommerceDark,
     },
     {
-      title: 'Project 2',
-      description: 'Here are some of the projects I have worked on.',
+      title: 'Auth template with Next.js and Authjs',
+      description: 'A simple authemtication template using Next.js and Authjs.',
       tags: project2,
       imageUrl: ecommerceLight,
     },
