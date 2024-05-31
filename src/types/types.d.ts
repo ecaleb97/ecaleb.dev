@@ -23,6 +23,7 @@ export interface ProjectProps {
   description: string;
   tags: Array<Record<ProjectTag>>;
   imageUrl: StaticImageData | string;
+  href: string;
 }
 
 export interface ProjectTag {

@@ -1,12 +1,14 @@
 import { ProjectTag, type ProjectProps } from '@/types/types';
 import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function ProjectItem({
   title,
   description,
   imageUrl,
-  tags
+  tags,
+  href
 }: ProjectProps) {
   return (
     <li 
@@ -23,18 +25,21 @@ export function ProjectItem({
         />
         <article 
           className='w-full px-4 py-6 rounded-b-lg flex flex-col gap-6
-          bg-gray-100 dark:bg-[#0a0a0a] dark:text-[#fafafa]'
+          dark:text-[#fafafa]'
         >
           <header>
-            <h3 
-              className='text-xl tracking-[0.05rem] flex items-center gap-2
+            <Link href={href} target='_blank' rel='noopener noreferrer'>
+              <h3 
+                className='text-lg font-thin tracking-[0.05rem] flex items-center gap-2
               hover:underline cursor-pointer transition'
-            >
-              {title}
-              <ArrowUpRight className='text-gray-500' size={14} />
-            </h3>
+              >
+                {title}
+                <ArrowUpRight className='text-gray-500' size={14} />
+              </h3>
+            </Link>
+            
           </header>
-          <p className='font-light'>{description}</p>
+          <p className='font-light text-sm text-neutral-500'>{description}</p>
           <footer>
             <ul className='flex flex-wrap gap-4'>
               {tags.map((tag: ProjectTag) => (

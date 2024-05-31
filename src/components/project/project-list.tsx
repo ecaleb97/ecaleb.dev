@@ -1,23 +1,26 @@
 import { DefaultProjects } from '@/components/project/default-projects';
 import { ProjectItem } from '@/components/project/project-item';
 import { project1, project2 } from '@/lib/data';
-import ecommerceDark from '@/static/images/ecommerceDark.webp';
+// import ecommerceDark from '@/static/images/ecommerceDark.webp';
 import ecommerceLight from '@/static/images/ecommerceLight.webp';
+import hack4good from '@/static/images/hack4good.webp';
 import { ProjectProps } from '@/types/types';
 
 export function ProjectList() {
   const projectsData = [
     {
-      title: 'Hack4Good Telefonica 2024 (Winners)',
+      title: 'Hack4Good Telefonica 2024 (Winners). 🚧',
       description: 'This project consist of promoting tourism in Spain through a web application.',
       tags: project1,
-      imageUrl: ecommerceDark,
+      imageUrl: hack4good,
+      href: 'https://hack4good-xi.vercel.app/',
     },
     {
-      title: 'Auth template with Next.js and Authjs',
-      description: 'A simple authemtication template using Next.js and Authjs.',
+      title: 'Ecommerce using React and Redux Toolkit. 🚧',
+      description: 'A simple ecommerce template using Tailwind CSS and React',
       tags: project2,
       imageUrl: ecommerceLight,
+      href: 'https://fanciful-semifreddo-854c15.netlify.app'
     },
   ] satisfies ProjectProps[];
 
@@ -31,6 +34,7 @@ export function ProjectList() {
             description={project.description}
             tags={project.tags}
             imageUrl={project.imageUrl}
+            href={project.href}
           />
         ))}
       </ul>
