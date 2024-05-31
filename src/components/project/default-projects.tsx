@@ -5,6 +5,13 @@ import { Github } from '../icons/github';
 export function DefaultProjects() {
   const data: Array<GithubResultApi>  = [
     {
+      name: 'Auth Template',
+      description: '🔐 A simple authentication template using Next.js, TypeScript, Tailwind CSS and Authjs.',
+      html_url: 'https://github.com/ecaleb97/auth-template',
+      homepage: 'https://ecaleb.dev',
+      topics: ['typescript', 'nextjs', 'tailwindcss', 'authjs', 'shadcn/ui'],
+    },
+    {
       name: 'ecaleb.dev',
       description: '🚀 My personal website / blog / portfolio built using Next.js, TypeScript, Tailwind CSS, shadcn/ui and Github API.',
       html_url: 'https://github.com/ecaleb97/ecaleb.dev',
