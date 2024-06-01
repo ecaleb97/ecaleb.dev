@@ -1,7 +1,7 @@
 import { Github } from '@/components/icons/github';
 import { Linkedin } from '@/components/icons/linkedin';
 import { Mail } from '@/components/icons/mail';
-import { Pill, ShineBorder } from '@/components/pill/pill';
+import { ShineBorder } from '@/components/pill/pill';
 
 export function SocialPills() {
   return (
@@ -10,7 +10,7 @@ export function SocialPills() {
         target='_blank'
         className=''
         href='https://www.linkedin.com/in/caleb-villanueva-zamalloa/'
-        color={['#a07cfe', '#fe8fb5', '#ffbe7b']}
+        color={['#ffffff']}
       >
         <Linkedin className="size-7" />
         <span>Linkedin</span>
@@ -19,7 +19,7 @@ export function SocialPills() {
         target='_blank'
         className=''
         href='https://github.com/ecaleb97'
-        color={['#a07cfe', '#fe8fb5', '#ffbe7b']}
+        color={['#ffffff']}
       >
         <Github className="size-7" />
         <span>Github</span>
@@ -27,7 +27,7 @@ export function SocialPills() {
       <ShineBorder
         className=''
         href='/contact'
-        color={['#a07cfe', '#fe8fb5', '#ffbe7b']}
+        color={['#ffffff']}
       >
         <Mail className="size-7" />
         <span>ecaleb.vz@gmail.com</span>
