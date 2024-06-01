@@ -1,31 +1,37 @@
 import { Github } from '@/components/icons/github';
 import { Linkedin } from '@/components/icons/linkedin';
 import { Mail } from '@/components/icons/mail';
-import { Pill } from '@/components/pill/pill';
+import { Pill, ShineBorder } from '@/components/pill/pill';
 
 export function SocialPills() {
   return (
     <div className='flex flex-wrap gap-5 text-sm'>
-      <Pill 
-        href='https://www.linkedin.com/in/caleb-villanueva-zamalloa/'
+      <ShineBorder
         target='_blank'
+        className=''
+        href='https://www.linkedin.com/in/caleb-villanueva-zamalloa/'
+        color={['#a07cfe', '#fe8fb5', '#ffbe7b']}
       >
         <Linkedin className="size-7" />
         <span>Linkedin</span>
-      </Pill>
-      <Pill 
-        href="https://github.com/ecaleb97"
+      </ShineBorder>
+      <ShineBorder
         target='_blank'
+        className=''
+        href='https://github.com/ecaleb97'
+        color={['#a07cfe', '#fe8fb5', '#ffbe7b']}
       >
         <Github className="size-7" />
         <span>Github</span>
-      </Pill>
-      <Pill 
-        href="/contact"
+      </ShineBorder>
+      <ShineBorder
+        className=''
+        href='/contact'
+        color={['#a07cfe', '#fe8fb5', '#ffbe7b']}
       >
         <Mail className="size-7" />
-          ecaleb.vz@gmail.com
-      </Pill>
+        <span>ecaleb.vz@gmail.com</span>
+      </ShineBorder>
     </div>
   );
 }
