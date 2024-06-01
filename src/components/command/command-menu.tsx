@@ -12,8 +12,8 @@ import {
 
 import { useCallback, useEffect, useState } from 'react';
 
-import { Github } from '@/components/icons/github';
-import { Linkedin } from '@/components/icons/linkedin';
+import Github from '@/components/icons/github';
+import Linkedin from '@/components/icons/linkedin';
 import { Button } from '@/components/ui/button';
 import {
   BookUser,

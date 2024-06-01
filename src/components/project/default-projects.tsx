@@ -1,6 +1,6 @@
 import { GithubResultApi } from '@/types/types';
 import { ArrowUpRight, Star as StarIcon } from 'lucide-react';
-import { Github } from '../icons/github';
+import Github from '../icons/github';
 
 export function DefaultProjects() {
   const data: Array<GithubResultApi>  = [
@@ -82,7 +82,7 @@ export function DefaultProjects() {
                 className='text-sm flex items-center gap-2'
               >
                 Source Code
-                <Github className='size-5' />
+                <Github className='size-4' />
                 <ArrowUpRight
                   size={12}
                   strokeWidth={1.5}
