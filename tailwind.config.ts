@@ -20,7 +20,7 @@ const config = {
     extend: {
       colors: {
         custom: '#1A1E36',
-        customDark: '#000000',
+        customDark: '#121212',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -61,6 +61,11 @@ const config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       keyframes: {
+        gradient: {
+          to: {
+            backgroundPosition: 'var(--bg-size) 0'
+          }
+        },
         'accordion-down': {
           from: { height: '0' },
           to: { height: 'var(--radix-accordion-content-height)' },
@@ -105,6 +110,7 @@ const config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
         slide: 'slide var(--speed) ease-in-out infinite alternate',
+        gradient: 'gradient 8s linear infinite',
       },
     },
   },
