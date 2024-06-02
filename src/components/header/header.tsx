@@ -62,7 +62,7 @@ export function Header () {
         <nav 
           className='flex h-12
           py-2 md:py-0 bg-[#fafafa]/90
-          dark:bg-black/90 rounded-full px-4'
+          dark:bg-customDark rounded-full px-4'
         >
           <ul
             className='flex w-[22rem] items-center justify-center
@@ -117,8 +117,8 @@ export function Header () {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent
-              className='border rounded-md 
-              m-4 p-4 pr-[80px] dark:bg-black md:hidden'
+              className='border border-gray-500 rounded-md 
+              m-4 p-4 pr-[80px] dark:bg-customDark md:hidden'
             >
               <DropdownMenuGroup>
                 {links.map((link) => (
@@ -130,7 +130,7 @@ export function Header () {
                         router.push(link.hash);
                       })}
                     >
-                      <span>{link.name}</span>
+                      <span className='text-sm text-muted-foreground'>{link.name}</span>
                     </DropdownMenuItem>
                   </Fragment>
                 ))}
