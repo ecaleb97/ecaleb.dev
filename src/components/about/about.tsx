@@ -22,8 +22,8 @@ export function About() {
           height={200}
         />
         <p
-          className='tracking-wider text-pretty text-sm sm:text-base 
-        leading-7 sm:leading-8 font-light dark:text-neutral-300'
+          className='tracking-wider text-pretty text-sm
+        leading-6 sm:leading-8 font-light text-muted-foreground'
         >
         I&apos;m a web developer based in Madrid, Spain. Focused on creating amazing user experiences using different technologies. Besides software, I love maths, reading and traveling (New York is my favorite city). I&apos;m always looking for new opportunities to learn and grow in all areas of my life.
         </p>
