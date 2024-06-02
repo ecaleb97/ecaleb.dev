@@ -1,7 +1,8 @@
-import styles from '@/components/intro/intro.module.css';
 import { SocialPills } from '@/components/social/social-pills';
-import calebPortrait from '@/static/images/me.webp';
-import Image from 'next/image';
+import { cn } from '@/lib/utils';
+import { ChevronRight } from 'lucide-react';
+import { AvatarIntro } from './avatar-intro';
+import { AnimatedGradientText } from './gradient-text';
 
 export function Intro() {
   return (
@@ -10,29 +11,42 @@ export function Intro() {
       className='w-full max-w-[50rem] flex flex-col gap-5 my-28
       sm:mb-20 '
     >
-      <Image
-        src={calebPortrait}
-        alt="Caleb's profile picture"
-        width={250}
-        height={250}
-        className='size-[6rem] sm:size-[8rem] object-cover rounded-full z-10'
-      />
-      <h1 
-        className={`text-2xl sm:text-3xl font-bold ${styles.textAnimate} 
-        dark:bg-gradient-to-r from-[#fff08b] from-20% 
-        via-[#00affa] via-30%
-        to-[#fff08b] to-80%`}
-      >
-        Hey, I&apos;m Caleb
-      </h1>
-      <p className='text-base tracking-wider leading-8 pb-3 text-pretty'>
-      Welcome to my portfolio. I&apos;m a web developer with a passion for creating amazing user experiences.
-        <br />
-        And here, I share what I&apos;ve been working on recently and things I learned along the way.
-        <br />
-        Besides software, another of my passions are mathematics and reading. I love teaching and learning new things every day.
-      </p>
-      <SocialPills />
+      <div className='flex flex-col-reverse items-start gap-4 sm:flex-row sm:items-center'>
+        <div className='flex flex-col gap-4'>
+          <h1 
+            className={`inline text-2xl sm:text-3xl font-bold
+            animate-gradient bg-gradient-to-r 
+            from-[#ffaa40] 
+            via-[#9c40ff] 
+            to-[#ffaa40] 
+            bg-[length:var(--bg-size)_100%] 
+            bg-clip-text 
+            text-transparent`}
+          >
+            Hey, I&apos;m Caleb
+          </h1>
+          {/* <AnimatedGradientText>
+            🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{' '}
+            <span
+              className={cn(
+                'inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent',
+              )}
+            >
+              Fullstack Developer
+            </span>
+            <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+          </AnimatedGradientText> */}
+          <p 
+            className='text-sm tracking-wide leading-[30px] pb-3 text-pretty
+            text-muted-foreground'
+          >
+            Web developer and private math tutor with a passion for creating amazing user experiences.
+            I love building amazing things and helping people.
+          </p>
+          <SocialPills />
+        </div>
+        <AvatarIntro />
+      </div>
     </section>
   );
 }
