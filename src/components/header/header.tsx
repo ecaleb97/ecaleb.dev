@@ -77,7 +77,7 @@ export function Header () {
                 <Link 
                   href={link.hash}
                   className='capitalize flex w-full justify-center items-center p-3
-                  hover:scale-105 tracking-wider text-base'
+                  hover:scale-105 tracking-wider text-sm'
                 >
                   {link.name}
                 </Link>

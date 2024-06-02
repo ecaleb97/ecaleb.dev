@@ -30,7 +30,7 @@ export function ProjectItem({
           <header>
             <Link href={href} target='_blank' rel='noopener noreferrer'>
               <h3 
-                className='text-lg font-thin tracking-[0.05rem] flex items-center gap-2
+                className='text-base font-thin tracking-[0.05rem] flex items-center gap-2
               hover:underline cursor-pointer transition'
               >
                 {title}
