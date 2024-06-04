@@ -55,7 +55,7 @@ export function ExperienceItem({
         </a>
       </div>
       <p 
-        className="mt-3 text-pretty text-sm text-gray-500
+        className="mt-3 text-pretty text-sm text-gray-500 dark:text-white
             tracking-wider leading-7"
       >
         {description}

@@ -23,7 +23,7 @@ export function About() {
         />
         <p
           className='tracking-wider text-pretty text-sm
-        leading-6 sm:leading-8 font-light text-muted-foreground'
+        leading-6 sm:leading-8 font-light text-gray-500 dark:text-white'
         >
         I&apos;m a web developer based in Madrid, Spain. Focused on creating amazing user experiences using different technologies. Besides software, I love maths, reading and traveling (New York is my favorite city). I&apos;m always looking for new opportunities to learn and grow in all areas of my life.
         </p>
