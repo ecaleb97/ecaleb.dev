@@ -38,7 +38,7 @@ export function Intro() {
           </AnimatedGradientText> */}
           <p 
             className='text-sm tracking-wide leading-[30px] pb-3 text-pretty
-            text-muted-foreground'
+            text-gray-500 dark:text-white'
           >
             Web developer and private math tutor with a passion for creating amazing user experiences.
             I love building amazing things and helping people.
