@@ -27,16 +27,8 @@ const links = [
     hash: '/projects',
   },
   {
-    name: 'Experience',
-    hash: '/experience',
-  },
-  {
     name: 'About',
     hash: '/about',
-  },
-  {
-    name: 'Contact',
-    hash: '/contact',
   },
 ];
 
@@ -60,7 +52,7 @@ export function Header () {
           sm:rounded-full'
         /> */}
         <nav 
-          className='flex h-12
+          className='flex h-12 bg-blue-200
           py-2 md:py-0 bg-[#fafafa]/90
           dark:bg-customDark rounded-full px-4'
         >
@@ -130,7 +122,11 @@ export function Header () {
                         router.push(link.hash);
                       })}
                     >
-                      <span className='text-sm text-muted-foreground'>{link.name}</span>
+                      <span 
+                        className='text-sm text-gray-500 dark:text-white'
+                      >
+                        {link.name}
+                      </span>
                     </DropdownMenuItem>
                   </Fragment>
                 ))}
