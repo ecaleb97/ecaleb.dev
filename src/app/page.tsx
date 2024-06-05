@@ -16,6 +16,9 @@ export default function Home() {
       <div className='max-w-[42rem]'>
         <Intro />
         <BentoGrid />
+        <Experience />
+        <About />
+        <Contact />
       </div>
     </main>
   );
