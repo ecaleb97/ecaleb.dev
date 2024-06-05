@@ -43,6 +43,7 @@ export interface ContactProps {
 export interface SectionWrapperProps {
   children: React.ReactNode;
   className?: string;
+  id?: string;
 }
 
 interface Variant {
