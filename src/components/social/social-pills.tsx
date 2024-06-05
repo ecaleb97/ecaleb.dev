@@ -26,7 +26,7 @@ export function SocialPills() {
       </ShineBorder>
       <ShineBorder
         className=''
-        href='/contact'
+        href='/#contact'
         color={['#6b7280']}
       >
         <Mail className="size-7" />
