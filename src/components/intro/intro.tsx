@@ -8,8 +8,8 @@ export function Intro() {
   return (
     <section 
       id='home'
-      className='w-full max-w-[50rem] flex flex-col gap-5 my-28
-      sm:mb-20 '
+      className='w-full max-w-[50rem] flex flex-col gap-5 mt-28
+      sm:mt-16'
     >
       <div className='flex flex-col-reverse items-start gap-4 sm:flex-row sm:items-center'>
         <div className='flex flex-col gap-4'>
