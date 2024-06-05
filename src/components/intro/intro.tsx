@@ -9,7 +9,7 @@ export function Intro() {
     <section 
       id='home'
       className='w-full max-w-[50rem] flex flex-col gap-5 mt-28
-      sm:mt-16'
+      sm:mt-26'
     >
       <div className='flex flex-col-reverse items-start gap-4 sm:flex-row sm:items-center'>
         <div className='flex flex-col gap-4'>
