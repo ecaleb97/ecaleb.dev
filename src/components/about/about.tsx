@@ -7,13 +7,13 @@ import { Path } from '../breadcrumb/path';
 export function About() {
   return (
     <SectionWrapper
-      className='my-28'
+      className='my-16'
     >
-      <Path name='About' />
+      {/* <Path name='About' /> */}
       <SectionHeading>
         About me
       </SectionHeading>
-      <div className='flex flex-col gap-6 sm:flex-row-reverse'>
+      {/* <div className='flex flex-col gap-6 sm:flex-row-reverse'>
         <Image 
           src={aboutPhoto} 
           alt="Caleb's in Brooklyn's Bridge"
@@ -27,7 +27,13 @@ export function About() {
         >
         I&apos;m a web developer based in Madrid, Spain. Focused on creating amazing user experiences using different technologies. Besides software, I love maths, reading and traveling (New York is my favorite city). I&apos;m always looking for new opportunities to learn and grow in all areas of my life.
         </p>
-      </div>
+      </div> */}
+      <p
+        className='tracking-wider text-pretty text-sm
+        leading-8 font-light text-gray-500 dark:text-white'
+      >
+        I&apos;m a web developer based in Madrid, Spain. Focused on creating amazing user experiences using different technologies. Besides software, I love maths, reading and traveling (New York is my favorite city). I&apos;m always looking for new opportunities to learn and grow in all areas of my life.
+      </p>
     </SectionWrapper>
   );
 }
