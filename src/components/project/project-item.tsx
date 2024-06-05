@@ -24,7 +24,7 @@ export function ProjectItem({
           className='rounded-t-lg object-cover w-full'
         />
         <article 
-          className='w-full px-4 py-6 rounded-b-lg flex flex-col gap-6
+          className='w-full px-4 py-6 rounded-b-lg flex flex-col gap-3
           dark:text-[#fafafa]'
         >
           <header>
@@ -39,7 +39,11 @@ export function ProjectItem({
             </Link>
             
           </header>
-          <p className='font-light text-sm text-neutral-500'>{description}</p>
+          <p 
+            className='text-sm text-neutral-500 dark:text-neutral-400'
+          >
+            {description}
+          </p>
           <footer>
             <ul className='flex flex-wrap gap-4'>
               {tags.map((tag: ProjectTag) => (
