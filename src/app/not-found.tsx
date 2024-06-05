@@ -21,6 +21,18 @@ export default function NotFound() {
         If you expected to see something here, 
         let me know (ecaleb.vz@gmail.com)
         </p>
+        <p>
+          Artwork by {' '}
+          <Button asChild variant='link' className='p-0'>
+            <Link 
+              href='https://github.com/SAWARATSUKI' 
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              SAWARATSUKI
+            </Link>
+          </Button>
+        </p>
         <Button asChild variant='link'>
           <Link href='/'>Return Home</Link>
         </Button>
