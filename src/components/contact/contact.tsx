@@ -57,13 +57,14 @@ export function Contact() {
 
   return (
     <SectionWrapper
-      className='my-28'
+      className='my-16'
+      id='contact'
     >
-      <Path name='Contact' />
+      {/* <Path name='Contact' /> */}
       <SectionHeading>
         Contact
       </SectionHeading>
-      <p className='tracking-wider text-sm text-muted-foreground leading-7'>
+      <p className='tracking-wider text-sm text-gray-500 dark:text-white leading-7'>
         Please contact me if you have any questions or would like to work together {' '}
         <a
           href="mailto:ecaleb.vz@gmail.com"
