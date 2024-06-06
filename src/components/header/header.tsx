@@ -30,6 +30,10 @@ const links = [
     name: 'About',
     hash: '/about',
   },
+  {
+    name: 'Blog',
+    hash: '/blog',
+  }
 ];
 
 export function Header () {
