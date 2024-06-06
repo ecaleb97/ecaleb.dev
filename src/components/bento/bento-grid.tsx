@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export function BentoGrid() {
   return (
-    <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-16">
+    <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-4">
       <div className='relative h-40'>
         <Image 
           src={hack4goodWinners} 
