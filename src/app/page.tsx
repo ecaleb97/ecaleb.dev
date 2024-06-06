@@ -11,9 +11,9 @@ export default function Home() {
     <main className='flex flex-col items-center px-5'>
       <div className='max-w-[42rem]'>
         <Intro />
-        <BentoGrid />
+        {/* <BentoGrid /> */}
         <Experience />
-        <About />
+        {/* <About /> */}
         <Contact />
       </div>
     </main>
