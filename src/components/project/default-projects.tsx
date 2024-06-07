@@ -1,58 +1,12 @@
+import { projectsData } from '@/lib/data';
 import { GithubResultApi } from '@/types/types';
 import { ArrowUpRight, Star as StarIcon } from 'lucide-react';
 import Github from '../icons/github';
 
 export function DefaultProjects() {
-  const data: Array<GithubResultApi>  = [
-    {
-      name: 'Auth Template',
-      description: '🔐 A simple authentication template using Next.js, TypeScript, Tailwind CSS and Authjs.',
-      html_url: 'https://github.com/ecaleb97/auth-template',
-      homepage: 'https://ecaleb.dev',
-      topics: ['typescript', 'nextjs', 'tailwindcss', 'authjs', 'shadcn/ui'],
-    },
-    {
-      name: 'ecaleb.dev',
-      description: '🚀 My personal website / blog / portfolio built using Next.js, TypeScript, Tailwind CSS, shadcn/ui and Github API.',
-      html_url: 'https://github.com/ecaleb97/ecaleb.dev',
-      homepage: 'https://ecaleb.dev',
-      topics: ['react', 'typescript', 'nextjs', 'tailwindcss', 'shadcn/ui'],
-    },
-    {
-      name: 'get_next_line',
-      description: '📚 A program that reads a file line by line.',
-      html_url: 'https://github.com/ecaleb97/get_next_line',
-      homepage: 'https://github.com/ecaleb97/get_next_line',
-      topics: ['c', '42school', 'get_next_line'],
-    },
-    {
-      name: 'hack4good',
-      description: '👨‍💻 Hack4good Telefonica 2024 (winners)',
-      html_url: 'https://github.com/ecaleb97/hack4good',
-      homepage: 'https://hack4good-xi.vercel.app/',
-      topics: ['typescript', '42school', 'nextjs', 'tailwindcss', 'hack4good',
-        'prisma-orm', 'authjs', 'shadcn/ui'
-      ],
-    },
-    {
-      name: 'libft',
-      description: '📚 My very first own library in C.',
-      html_url: 'https://github.com/ecaleb97/libft',
-      homepage: 'https://github.com/ecaleb97/libft',
-      topics: ['c', '42school', 'makefile', 'libft'],
-    },
-    {
-      name: 'cv',
-      description: '📙 My professional (minimalist) CV page.',
-      html_url: 'https://github.com/ecaleb97/cv',
-      homepage: 'https://cv.ecaleb.dev',
-      topics: ['typescript', 'nextjs', 'shadcn/ui', 'tailwindcss'],
-    }
-  ];
-
   return (
     <ul className="flex flex-col space-y-3">
-      {data?.map((repo: GithubResultApi) => (
+      {projectsData.map((repo: GithubResultApi) => (
         <li
           key={repo.html_url}
           className="flex flex-col space-y-2 rounded-md border 
