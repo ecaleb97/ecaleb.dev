@@ -69,3 +69,22 @@ export const experienceData = [
     companyUrl: '/'
   }
 ];
+
+export const links = [
+  {
+    name: 'Home',
+    hash: '/',
+  },
+  {
+    name: 'Projects',
+    hash: '/projects',
+  },
+  {
+    name: 'About',
+    hash: '/about',
+  },
+  {
+    name: 'Blog',
+    hash: '/blog',
+  }
+];

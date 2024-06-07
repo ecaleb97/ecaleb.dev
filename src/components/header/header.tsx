@@ -10,31 +10,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
+import { links } from '@/lib/data';
 import emojiCaleb from '@/static/images/emoji-caleb.webp';
 import { Equal } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Fragment, useCallback, useState } from 'react';
-
-const links = [
-  {
-    name: 'Home',
-    hash: '/',
-  },
-  {
-    name: 'Projects',
-    hash: '/projects',
-  },
-  {
-    name: 'About',
-    hash: '/about',
-  },
-  {
-    name: 'Blog',
-    hash: '/blog',
-  }
-];
 
 export function Header () {
   const router = useRouter();
