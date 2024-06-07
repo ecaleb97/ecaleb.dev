@@ -12,18 +12,14 @@ import {
 
 import { useCallback, useEffect, useState } from 'react';
 
-import Github from '@/components/icons/github';
-import Linkedin from '@/components/icons/linkedin';
 import { Button } from '@/components/ui/button';
 import {
-  BookUser,
-  CircleUser,
-  Code,
   Laptop,
   Moon,
-  Notebook,
   Sun
 } from 'lucide-react';
+
+import { commandLinks, suggestions } from '@/lib/data';
 
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/navigation';
@@ -32,47 +28,6 @@ export function CommandMenu() {
   const [open, setOpen] = useState(false);
   const { setTheme } = useTheme();
   const router = useRouter();
-
-  const links = [
-    {
-      name: 'Projects',
-      icon: Code,
-      hash: '/projects',
-    },
-    {
-      name: 'Experience',
-      icon: Notebook,
-      hash: '/experience',
-    },
-    {
-      name: 'About',
-      icon: CircleUser,
-      hash: '/about',
-    },
-    {
-      name: 'Contact',
-      icon: Laptop,
-      hash: '/contact',
-    }
-  ];
-
-  const suggestions = [
-    {
-      name: 'Github',
-      icon: Github,
-      hash: 'https://github.com/ecaleb97'
-    },
-    {
-      name: 'LinkedIn',
-      icon: Linkedin,
-      hash: 'https://www.linkedin.com/in/caleb-villanueva-zamalloa/'
-    },
-    {
-      name: 'Resume',
-      icon: BookUser,
-      hash: 'https://cv.ecaleb.dev/'
-    }
-  ];
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -127,7 +82,7 @@ export function CommandMenu() {
           </CommandGroup>
           <CommandSeparator />
           <CommandGroup heading='Links'>
-            {links.map((link) => (
+            {commandLinks.map((link) => (
               <CommandItem key={link.hash} onSelect={() => {
                 runCommand(() => router.push(link.hash));
               }}>
