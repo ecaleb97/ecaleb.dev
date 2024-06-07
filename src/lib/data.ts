@@ -1,7 +1,19 @@
+import Github from '@/components/icons/github';
+import Linkedin from '@/components/icons/linkedin';
 import { Nextjs } from '@/components/icons/next';
 import { TailwindCSS } from '@/components/icons/tailwind';
 import { TypeScript } from '@/components/icons/typescript';
 import { GithubResultApi } from '@/types/types';
+import {
+  BookHeart,
+  BookUser,
+  CircleUser,
+  Code,
+  Laptop,
+  Moon,
+  Notebook,
+  Sun,
+} from 'lucide-react';
 import React from 'react';
 
 export const project1 = [
@@ -134,5 +146,51 @@ export const links = [
   {
     name: 'Blog',
     hash: '/blog',
+  }
+];
+
+export const commandLinks = [
+  {
+    name: 'Projects',
+    icon: Code,
+    hash: '/projects',
+  },
+  {
+    name: 'Experience',
+    icon: Notebook,
+    hash: '/experience',
+  },
+  {
+    name: 'About',
+    icon: CircleUser,
+    hash: '/about',
+  },
+  {
+    name: 'Contact',
+    icon: Laptop,
+    hash: '/contact',
+  },
+  {
+    name: 'Blog',
+    icon: BookHeart,
+    hash: '/blog',
+  }
+];
+
+export const suggestions = [
+  {
+    name: 'Github',
+    icon: Github,
+    hash: 'https://github.com/ecaleb97'
+  },
+  {
+    name: 'LinkedIn',
+    icon: Linkedin,
+    hash: 'https://www.linkedin.com/in/caleb-villanueva-zamalloa/'
+  },
+  {
+    name: 'Resume',
+    icon: BookUser,
+    hash: 'https://cv.ecaleb.dev/'
   }
 ];
