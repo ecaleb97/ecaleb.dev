@@ -20,7 +20,6 @@ import { useTransition } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { z } from 'zod';
-import { Path } from '../breadcrumb/path';
 
 export function Contact() {
 
@@ -60,7 +59,6 @@ export function Contact() {
       className='my-16'
       id='contact'
     >
-      {/* <Path name='Contact' /> */}
       <SectionHeading>
         Contact
       </SectionHeading>
@@ -101,6 +99,7 @@ export function Contact() {
                       placeholder='example@gmail.com'
                       className='dark:bg-customDark border dark:border-[#fafafa]'
                       autoComplete='email'
+                      disabled={isPending}
                     />
                   </FormControl>
                   <FormMessage />
@@ -124,6 +123,7 @@ export function Contact() {
                       placeholder='Your message here...'
                       className='dark:bg-customDark border dark:border-[#fafafa]'
                       {...field}
+                      disabled={isPending}
                     />
                   </FormControl>
                   <FormMessage />
