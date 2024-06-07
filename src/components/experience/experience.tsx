@@ -8,7 +8,6 @@ export function Experience() {
     <SectionWrapper
       className='my-16'
     >
-      {/* <Path name='Experience' /> */}
       <SectionHeading>
         Experience
       </SectionHeading>
