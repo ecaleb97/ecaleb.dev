@@ -95,7 +95,7 @@ export function Header () {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent
-              className='border border-gray-500 rounded-md 
+              className='border border-gray-300 rounded-md 
               m-4 p-4 pr-[80px] dark:bg-customDark md:hidden'
             >
               <DropdownMenuGroup>

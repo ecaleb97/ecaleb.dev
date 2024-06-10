@@ -37,7 +37,7 @@ export function Intro() {
             <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
           </AnimatedGradientText> */}
           <p 
-            className='text-sm tracking-wide leading-[30px] pb-3 text-pretty
+            className='text-sm leading-[30px] pb-3 text-pretty
             text-gray-500 dark:text-white'
           >
             I&apos;m a {' '}

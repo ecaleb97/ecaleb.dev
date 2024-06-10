@@ -62,7 +62,7 @@ export function Contact() {
       <SectionHeading>
         Contact
       </SectionHeading>
-      <p className='tracking-wider text-sm text-gray-500 dark:text-white leading-7'>
+      <p className='text-sm text-gray-500 dark:text-white leading-7'>
         Please contact me if you have any questions or would like to work together {' '}
         <a
           href="mailto:ecaleb.vz@gmail.com"

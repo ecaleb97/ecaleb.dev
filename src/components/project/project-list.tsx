@@ -10,7 +10,7 @@ export function ProjectList() {
   const projectsData = [
     {
       title: 'Hack4Good Telefonica 2024 (Winners). 🚧',
-      description: 'This project consist of promoting tourism in Spain through a web application.',
+      description: 'Promoting tourism in Spain through a web application.',
       tags: project1,
       imageUrl: hack4good,
       href: 'https://hack4good-xi.vercel.app/',
@@ -26,7 +26,7 @@ export function ProjectList() {
 
   return (
     <>
-      <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 tracking-wider">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         {projectsData.map((project) => (
           <ProjectItem
             key={project.title}
@@ -37,7 +37,7 @@ export function ProjectList() {
             href={project.href}
           />
         ))}
-      </ul>
+      </div>
       <DefaultProjects />
     </>
     

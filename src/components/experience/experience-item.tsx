@@ -43,8 +43,8 @@ export function ExperienceItem({
           target="_blank"
           rel="noopener"
           className="group flex w-max items-center text-pretty text-sm 
-              text-neutral-600 transition-colors duration-150 hover:text-black 
-              dark:border-neutral-800 dark:text-neutral-400 dark:hover:text-white"
+          text-neutral-600 transition-colors duration-150 hover:text-black 
+          dark:border-neutral-800 dark:text-neutral-400 dark:hover:text-white"
         >
           <span>{company}</span>
           <ArrowUpRight
@@ -56,7 +56,7 @@ export function ExperienceItem({
       </div>
       <p 
         className="mt-3 text-pretty text-sm text-gray-500 dark:text-white
-            tracking-wider leading-7"
+        leading-7"
       >
         {description}
       </p>
