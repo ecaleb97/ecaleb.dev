@@ -45,7 +45,7 @@ export function ProjectItem({
           </div>
         </div>
       </div>
-      <footer className='p-4 text-pretty mt-auto flex flex-col'>
+      <footer className='px-4 pb-4 text-pretty mt-auto flex flex-col'>
         <ul className='flex flex-wrap gap-2'>
           {tags.map((tag: ProjectTag) => (
             <li key={tag.framework}>
