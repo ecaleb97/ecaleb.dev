@@ -10,9 +10,7 @@ import {
   CircleUser,
   Code,
   Laptop,
-  Moon,
   Notebook,
-  Sun,
 } from 'lucide-react';
 import React from 'react';
 
@@ -192,5 +190,10 @@ export const suggestions = [
     name: 'Resume',
     icon: BookUser,
     hash: 'https://cv.ecaleb.dev/'
+  },
+  {
+    name: 'Blog',
+    icon: BookHeart,
+    hash: '/blog'
   }
 ];
