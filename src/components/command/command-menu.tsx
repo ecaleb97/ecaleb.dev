@@ -50,13 +50,13 @@ export function CommandMenu() {
     <>
       <Button 
         onClick={() => setOpen((open) => !open)} 
-        className='text-sm text-muted-foreground 
-        flex gap-6 px-2 py-1'
+        className='text-sm text-muted-foreground hover:bg-gray-200
+        flex gap-6 px-2 py-1 dark:hover:bg-black/10'
       >
         Search...{' '}
         <kbd 
           className='pointer-events-none inline-flex h-5 select-none 
-          text-gray-600 dark:bg-black
+          text-gray-600 border-gray-200 dark:border-gray-700
           items-center gap-1 rounded border px-1.5 font-mono
           text-[10px] font-medium dark:text-gray-400 opacity-100'
         >

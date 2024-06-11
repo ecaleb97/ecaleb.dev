@@ -73,6 +73,7 @@ export function Contact() {
         >
           ecaleb.vz@gmail.com.
         </a>
+        <br />
         {' '}I&apos;d be happy to connect!
       </p>
       <Form {...form}>
