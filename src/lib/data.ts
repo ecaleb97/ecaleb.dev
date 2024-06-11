@@ -156,7 +156,7 @@ export const commandLinks = [
   {
     name: 'Experience',
     icon: Notebook,
-    hash: '/experience',
+    hash: '/#experience',
   },
   {
     name: 'About',
@@ -166,7 +166,7 @@ export const commandLinks = [
   {
     name: 'Contact',
     icon: Laptop,
-    hash: '/contact',
+    hash: '/#contact',
   },
   {
     name: 'Blog',

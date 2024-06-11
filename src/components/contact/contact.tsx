@@ -63,7 +63,7 @@ export function Contact() {
         Contact
       </SectionHeading>
       <p className='text-sm text-gray-500 dark:text-white leading-7'>
-        Please contact me if you have any questions or would like to work together {' '}
+        If you have any questions or would like to work together reach me at {' '}
         <a
           href="mailto:ecaleb.vz@gmail.com"
           className={`underline font-bold ${styles.textAnimate} 
@@ -71,8 +71,9 @@ export function Contact() {
           via-[#00affa] via-30%
           to-[#fff08b] to-80%`} 
         >
-          ecaleb.vz@gmail.com
+          ecaleb.vz@gmail.com.
         </a>
+        {' '}I&apos;d be happy to connect!
       </p>
       <Form {...form}>
         <form 
