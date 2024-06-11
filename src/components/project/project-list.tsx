@@ -40,6 +40,5 @@ export function ProjectList() {
       </div>
       <DefaultProjects />
     </>
-    
   );
 }

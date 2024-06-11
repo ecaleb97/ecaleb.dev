@@ -14,7 +14,7 @@ export function ProjectItem({
     <div
       className='w-full rounded-lg border border-[#dbe5e5] dark:border-[#2e2e2e]
     hover:scale-105 transition cursor-pointer'>
-      <Image 
+      <Image
         src={imageUrl}
         alt={title}
         width={400}
