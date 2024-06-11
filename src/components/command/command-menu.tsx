@@ -56,7 +56,7 @@ export function CommandMenu() {
         Search...{' '}
         <kbd 
           className='pointer-events-none inline-flex h-5 select-none 
-          text-gray-600 border-gray-200 dark:border-gray-700
+          text-gray-600 border-gray-400 dark:border-gray-700
           items-center gap-1 rounded border px-1.5 font-mono
           text-[10px] font-medium dark:text-gray-400 opacity-100'
         >
