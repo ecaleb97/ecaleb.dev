@@ -1,4 +1,4 @@
-import { Blog } from '@/components/blog/blog-page';
+// import { Blog } from '@/components/blog/blog-page';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
