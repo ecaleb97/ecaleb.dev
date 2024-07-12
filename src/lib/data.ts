@@ -52,6 +52,27 @@ export const project2 = [
 
 export const projectsData: Array<GithubResultApi> = [
   {
+    name: 'AI Chatbot',
+    description: '🤖 An AI chatbot using Next.js, TypeScript, Tailwind CSS and shadcn/ui.',
+    html_url: 'https://github.com/ecaleb97/ai-project',
+    homepage: 'https://github.com/ecaleb97/ai-project',
+    topics: ['typescript', 'nextjs', 'tailwindcss', 'shadcn/ui'],
+  },
+  {
+    name: 'Miro Clone',
+    description: '🎨 A Miro clone using Next.js, TypeScript, Tailwind CSS and shadcn/ui.',
+    html_url: 'https://github.com/ecaleb97/miro-clone',
+    homepage: 'https://github.com/ecaleb97/miro-clone',
+    topics: ['typescript', 'nextjs', 'tailwindcss', 'shadcn/ui'],
+  },
+  {
+    name: 'ecommerce dashboard',
+    description: '🛒 A ecommerce dashboard using Next.js, TypeScript, Tailwind CSS and shadcn/ui.',
+    html_url: 'https://github.com/ecaleb97/ecommerce-dashboard',
+    homepage: 'https://github.com/ecaleb97/ecommerce-dashboard',
+    topics: ['typescript', 'nextjs', 'tailwindcss', 'shadcn/ui'],
+  },
+  {
     name: 'Auth Template',
     description: '🔐 A simple authentication template using Next.js, TypeScript, Tailwind CSS and Authjs.',
     html_url: 'https://github.com/ecaleb97/auth-template',
