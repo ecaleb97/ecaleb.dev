@@ -16,7 +16,7 @@ export default function BlogPage() {
 
   return (
     <main className='flex justify-center items-center px-5'>
-      <Blog />
+      {/* <Blog /> */}
     </main>
   );
 }
