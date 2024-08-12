@@ -1,6 +1,6 @@
 # Caleb Zamalloa - Personal Website built using Next.js
 
-![App Screenshot](/public/portfolio.png)
+![App Screenshot](./public/portfolio.png)
 
 Stack used in this project
 
