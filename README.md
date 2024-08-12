@@ -1,4 +1,4 @@
-# Caleb Zamalloa - Personal Website built using Next.js and Github API
+# Caleb Zamalloa - Personal Website built using Next.js
 
 ![App Screenshot](/public/portfolio.png)
 
