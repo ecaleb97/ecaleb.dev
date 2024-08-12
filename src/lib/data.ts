@@ -54,8 +54,8 @@ export const projectsData: Array<GithubResultApi> = [
 	{
 		name: "Recetas AI",
 		description: "Recetas AI is a recipe recommendation using AI.",
-		html_url: "",
-		homepage: "",
+		html_url: "https://github.com/ecaleb97/hackathon-midu-vercel",
+		homepage: "https://recetas.ecaleb.dev",
 		topics: ["typescript", "nextjs", "tailwindcss", "shadcn/ui"],
 	},
 	{
