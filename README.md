@@ -4,12 +4,12 @@
 
 Stack used in this project
 
--   Next.js
--   Typescript
--   Github API
--   Tailwind CSS
--   shadcn/ui
--   Resend
+- Next.js
+- Typescript
+- Github API
+- Tailwind CSS
+- shadcn/ui
+- Resend
 
 ## Environment Variables
 

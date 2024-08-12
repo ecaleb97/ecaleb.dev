@@ -18,7 +18,7 @@
 //       <ul>
 //         {allBlogs.map((blog) => (
 //           <li key={blog.slug}>
-//             <Link 
+//             <Link
 //               href={`/blog/${blog.slug}`}
 //               className='text-xl hover:underline'
 //             >

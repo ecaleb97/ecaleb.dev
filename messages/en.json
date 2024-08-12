@@ -1,69 +1,69 @@
 {
-  "nav": {
-    "home": "home",
-    "projects": "projects",
-    "experience": "experience",
-    "about": "about",
-    "contact": "contact"
-  },
-  "intro": {
-    "name": "Hey, I'm Caleb",
-    "description": "Welcome to my portfolio. I'm a web developer with a passion for creating amazing user experiences.",
-    "description2": "And here, I share what I've been working on recently and things I learned along the way.",
-    "description3": "Besides software, another of my passions are mathematics and reading. I love teaching and learning new things every day."
-  },
-  "projects": {
-    "title": "Projects",
-    "link": "More",
-    "projectsItems": {
-      "project1": {
-        "title": "Project 1",
-        "description": "Here are some of the projects I've worked on."
-      },
-      "project2": {
-        "title": "Project 2",
-        "description": "This is a description of project 2."
-      }
-    }
-  },
-  "experience": {
-    "title": "Experience",
-    "jobs": {
-      "job1": {
-        "title": "Fullstack Developer",
-        "company": "Freelance",
-        "date": "2023 - Present",
-        "description": "I work as a fullstack developer on various projects. I'm responsible for developing and maintaining web applications, creating APIs, and implementing new features."
-      },
-      "job2": {
-        "title": "Mobile Device Managament",
-        "company": "Indra Sistemas",
-        "date": "2022 - 2023",
-        "description": "I worked as a Mobile Device Management Specialist at Indra Sistemas. I was responsible for managing mobile devices, creating and deploying applications, and providing technical support to end users."
-      },
-      "job3": {
-        "title": "Apple Technician",
-        "company": "K-tuin Sistemas Informáticos",
-        "date": "2020 - 2022",
-        "description": "I worked as an Apple Certified iOS and macOS Technician. I was responsible for providing technical support to end users, troubleshooting hardware and software issues, and repairing Apple devices."
-      },
-      "job4": {
-        "title": "Private Math Tutor",
-        "company": "Freelance",
-        "date": "2017 - Present",
-        "description": "I work as a private math tutor, helping students improve their math skills and prepare for exams. I create personalized lesson plans based on each student's needs and provide ongoing support and feedback."
-      }
-    }
-  },
-  "about": {
-    "title": "About me",
-    "description": "I'm a web developer based in Madrid, Spain. Focused on creating amazing user experiences using different technologies. Besides software, I love maths, reading and traveling (New York is my favorite city). I'm always looking for new opportunities to learn and grow in all areas of my life."
-  },
-  "contact": {
-    "title": "Contact me",
-    "description": "Please contact me if you have any questions or would like to work together. ",
-    "labelEmail": "Email",
-    "labelMessage": "Message",
-    "labelSubmit": "Send message"
-  }
+	"nav": {
+		"home": "home",
+		"projects": "projects",
+		"experience": "experience",
+		"about": "about",
+		"contact": "contact"
+	},
+	"intro": {
+		"name": "Hey, I'm Caleb",
+		"description": "Welcome to my portfolio. I'm a web developer with a passion for creating amazing user experiences.",
+		"description2": "And here, I share what I've been working on recently and things I learned along the way.",
+		"description3": "Besides software, another of my passions are mathematics and reading. I love teaching and learning new things every day."
+	},
+	"projects": {
+		"title": "Projects",
+		"link": "More",
+		"projectsItems": {
+			"project1": {
+				"title": "Project 1",
+				"description": "Here are some of the projects I've worked on."
+			},
+			"project2": {
+				"title": "Project 2",
+				"description": "This is a description of project 2."
+			}
+		}
+	},
+	"experience": {
+		"title": "Experience",
+		"jobs": {
+			"job1": {
+				"title": "Fullstack Developer",
+				"company": "Freelance",
+				"date": "2023 - Present",
+				"description": "I work as a fullstack developer on various projects. I'm responsible for developing and maintaining web applications, creating APIs, and implementing new features."
+			},
+			"job2": {
+				"title": "Mobile Device Managament",
+				"company": "Indra Sistemas",
+				"date": "2022 - 2023",
+				"description": "I worked as a Mobile Device Management Specialist at Indra Sistemas. I was responsible for managing mobile devices, creating and deploying applications, and providing technical support to end users."
+			},
+			"job3": {
+				"title": "Apple Technician",
+				"company": "K-tuin Sistemas Informáticos",
+				"date": "2020 - 2022",
+				"description": "I worked as an Apple Certified iOS and macOS Technician. I was responsible for providing technical support to end users, troubleshooting hardware and software issues, and repairing Apple devices."
+			},
+			"job4": {
+				"title": "Private Math Tutor",
+				"company": "Freelance",
+				"date": "2017 - Present",
+				"description": "I work as a private math tutor, helping students improve their math skills and prepare for exams. I create personalized lesson plans based on each student's needs and provide ongoing support and feedback."
+			}
+		}
+	},
+	"about": {
+		"title": "About me",
+		"description": "I'm a web developer based in Madrid, Spain. Focused on creating amazing user experiences using different technologies. Besides software, I love maths, reading and traveling (New York is my favorite city). I'm always looking for new opportunities to learn and grow in all areas of my life."
+	},
+	"contact": {
+		"title": "Contact me",
+		"description": "Please contact me if you have any questions or would like to work together. ",
+		"labelEmail": "Email",
+		"labelMessage": "Message",
+		"labelSubmit": "Send message"
+	}
 }

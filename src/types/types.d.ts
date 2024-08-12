@@ -1,59 +1,65 @@
-import { StaticImageData } from 'next/image';
+import { StaticImageData } from "next/image";
 
 export interface HeaderProps {
-  home: string;
-  projects: string;
-  experience: string;
-  about: string;
-  contact: string;
+	home: string;
+	projects: string;
+	experience: string;
+	about: string;
+	contact: string;
 }
 export interface ChildrenProps {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }
 
 export interface PillProps {
-  href: string;
-  children: React.ReactNode;
-  className?: string;
-  target?: string;
+	href: string;
+	children: React.ReactNode;
+	className?: string;
+	target?: string;
 }
 
 export interface ProjectProps {
-  title: string;
-  description: string;
-  tags: Array<Record<ProjectTag>>;
-  imageUrl: StaticImageData | string;
-  href: string;
+	title: string;
+	description: string;
+	tags: Array<Record<ProjectTag>>;
+	imageUrl: StaticImageData | string;
+	href: string;
 }
 
 export interface ProjectTag {
-  icon: React.ReactNode;
-  framework: string;
-  link?: string;
+	icon: React.ReactNode;
+	framework: string;
+	link?: string;
 }
 
 export interface ContactProps {
-  title: string;
-  description: string;
-  labelEmail: string;
-  labelMessage: string;
-  labelSubmit: string;
+	title: string;
+	description: string;
+	labelEmail: string;
+	labelMessage: string;
+	labelSubmit: string;
 }
 
 export interface SectionWrapperProps {
-  children: React.ReactNode;
-  className?: string;
-  id?: string;
+	children: React.ReactNode;
+	className?: string;
+	id?: string;
 }
 
 interface Variant {
-  variant?: 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link';
+	variant?:
+		| "default"
+		| "destructive"
+		| "outline"
+		| "secondary"
+		| "ghost"
+		| "link";
 }
 
 export interface GithubResultApi {
-  name:                        string;
-  html_url:                    string;
-  description:                 string;
-  homepage:                    string;
-  topics:                      Array<string>;
+	name: string;
+	html_url: string;
+	description: string;
+	homepage: string;
+	topics: Array<string>;
 }
