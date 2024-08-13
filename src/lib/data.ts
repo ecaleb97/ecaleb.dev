@@ -155,11 +155,11 @@ export const experienceData = [
 		companyUrl: "https://www.indracompany.com/",
 	},
 	{
-		title: "Apple Technician",
+		title: "Frontend Developer | Apple Technician",
 		company: "K-tuin Sistemas Informáticos",
 		date: "2020 - 2022",
 		description:
-			"I worked as an Apple Certified iOS and macOS Technician. I was responsible for providing technical support to end users, troubleshooting hardware and software issues, and repairing Apple devices.",
+			"I was responsible for providing technical support to end users, troubleshooting hardware and software issues, and repairing Apple devices. I also worked as a frontend developer, creating and maintaining web applications.",
 		companyUrl: "https://www.k-tuin.com/",
 	},
 	{

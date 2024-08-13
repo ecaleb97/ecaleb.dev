@@ -97,8 +97,8 @@ export function ProjectItem2({
 			<CardHeader>
 				<div className="space-y-2">
 					<CardTitle
-						className="text-lg font-light tracking-[0.05rem] sm:min-h-[56px]
-            hover:underline cursor-pointer transition hover:underline-offset-4 hover:decoration-dotted"
+						className="text-lg font-light tracking-[0.05rem] sm:min-h-[56px] hover:underline 
+						cursor-pointer transition hover:underline-offset-4 hover:decoration-dotted"
 					>
 						<Link
 							href={href}
