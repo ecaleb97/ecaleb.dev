@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 	description: "View my projects and contributions to open-source.",
 };
 
-export default async function ProjectsPage() {
+export default function ProjectsPage() {
 	return (
 		<main className="flex flex-col items-center px-5">
 			<SectionWrapper className="my-28">
