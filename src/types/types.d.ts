@@ -22,8 +22,9 @@ export interface ProjectProps {
 	title: string;
 	description: string;
 	tags: Array<Record<ProjectTag>>;
-	imageUrl: StaticImageData | string;
+	imageUrl?: StaticImageData | string;
 	href: string;
+	repoUrl?: string
 }
 
 export interface ProjectTag {
