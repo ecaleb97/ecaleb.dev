@@ -1,7 +1,7 @@
 "use client";
 
 import { CommandMenu } from "@/components/command/command-menu";
-import { ThemeSwitcher } from "@/components/switcher/theme-switcher";
+import { ThemeSwitcher, ThemeSwitcherButton } from "@/components/switcher/theme-switcher";
 import { Button } from "@/components/ui/button";
 import {
 	DropdownMenu,
@@ -62,7 +62,8 @@ export function Header() {
 							</li>
 						))}
 						<li>
-							<ThemeSwitcher variant="default" />
+							{/* <ThemeSwitcher variant="default" /> */}
+							<ThemeSwitcherButton />
 						</li>
 					</ul>
 				</nav>
@@ -89,7 +90,8 @@ export function Header() {
 				</div>
 				<div className="flex gap-2 items-center">
 					<CommandMenu />
-					<ThemeSwitcher variant="default" />
+					{/* <ThemeSwitcher variant="default" /> */}
+					<ThemeSwitcherButton />
 					<DropdownMenu>
 						<DropdownMenuTrigger asChild className="border-none px-0 bg-none">
 							<Button variant="default" className="text-black dark:text-white">
@@ -97,22 +99,22 @@ export function Header() {
 							</Button>
 						</DropdownMenuTrigger>
 						<DropdownMenuContent
-							className="border border-gray-300 rounded-md 
-              m-4 p-4 pr-[80px] dark:bg-customDark md:hidden"
+							className="border border-neutral-300 dark:border-neutral-800 rounded-md 
+              m-4 p-2 pr-[80px] dark:bg-customDark md:hidden"
 						>
 							<DropdownMenuGroup>
 								{links.map((link) => (
 									<Fragment key={link.hash}>
 										<DropdownMenuItem
 											key={link.hash}
-											className="text-lg"
+											className="text-lg text-neutral-500 dark:text-neutral-400"
 											onSelect={() =>
 												runCommand(() => {
 													router.push(link.hash);
 												})
 											}
 										>
-											<span className="text-sm text-gray-500 dark:text-white">
+											<span className="text-sm text-neutral-500 dark:text-neutral-400">
 												{link.name}
 											</span>
 										</DropdownMenuItem>

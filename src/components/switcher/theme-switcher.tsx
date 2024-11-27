@@ -3,6 +3,7 @@
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import * as React from "react";
+import { useEffect } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -41,5 +42,30 @@ export function ThemeSwitcher({ variant }: Variant) {
 				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>
+	);
+}
+
+export function ThemeSwitcherButton() {
+	const { theme, setTheme } = useTheme();
+	const [mounted, setMounted] = React.useState(false);
+
+	useEffect(() => setMounted(true), []);
+
+	if (!mounted) return null;
+
+	return (
+		<Button
+			variant="ghost"
+			size="icon"
+			className="p-2 group opacity-80 transition-opacity duration-150 hover:opacity-100 dark:hover:bg-neutral-800"
+			onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+		>
+			{theme === "dark" ? (
+				<Sun className="size-5 duration-500 group-hover:rotate-12" />
+			) : (
+				<Moon className="size-5 duration-500 group-hover:rotate-12" />
+			)}
+			<span className="sr-only">Toggle Theme</span>
+		</Button>
 	);
 }
