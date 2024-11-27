@@ -2,6 +2,21 @@ import Github from "@/components/icons/github";
 import Linkedin from "@/components/icons/linkedin";
 import { Mail } from "@/components/icons/mail";
 import { ShineBorder } from "@/components/pill/pill";
+import { Button } from "../ui/button";
+import Link from "next/link";
+
+const socialLinks = [
+	{
+		name: "Linkedin",
+		url: "https://www.linkedin.com/in/caleb-villanueva-zamalloa/",
+		icon: Linkedin,
+	},
+	{
+		name: "Github",
+		url: "https://www.github.com/ecaleb97",
+		icon: Github,
+	},
+];
 
 export function SocialPills() {
 	return (
@@ -28,6 +43,20 @@ export function SocialPills() {
 				<Mail className="size-7" />
 				<span>ecaleb.vz@gmail.com</span>
 			</ShineBorder>
+		</div>
+	);
+}
+
+export function Social() {
+	return (
+		<div className="flex flex-wrap items-center">
+			{socialLinks.map((link) => (
+				<Button key={link.url} asChild variant="ghost" className="px-2 hover:bg-slate-200 dark:hover:bg-neutral-800 ">
+					<Link target="_blank" href={link.url}>
+						{<link.icon className="size-4" />}
+					</Link>
+				</Button>
+			))}
 		</div>
 	);
 }

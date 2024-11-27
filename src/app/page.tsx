@@ -76,6 +76,6 @@ const data = [
 			"A simple Github profile viewer that fetches user data using the Github API.",
 		tags: project2,
 		href: "https://github-profile-delta-plum.vercel.app/",
-		repoUrl: "https://github.com/ecaleb97/github-profile"
-	}
+		repoUrl: "https://github.com/ecaleb97/github-profile",
+	},
 ];

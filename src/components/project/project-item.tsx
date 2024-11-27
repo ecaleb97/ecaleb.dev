@@ -21,7 +21,7 @@ export function ProjectItem({
 	repoUrl,
 }: ProjectProps) {
 	return (
-		<Card className="flex flex-col overflow-hidden hover:shadow-md transition-all duration-300 ease-out h-full bg-transparent">
+		<Card className="flex flex-col overflow-hidden hover:shadow-md transition-all duration-300 ease-out h-full bg-transparent border-neutral-300 dark:border-neutral-800">
 			{/* <Image
 				src={imageUrl}
 				alt={title}
@@ -51,7 +51,7 @@ export function ProjectItem({
 				</div>
 			</CardHeader>
 			<CardContent className="px-4 py-0">
-				<Markdown className="prose max-w-full text-pretty text-gray-500 dark:text-white text-sm dark:prose-invert sm:min-h-[40px] font-light">
+				<Markdown className="prose max-w-full text-pretty text-neutral-500 dark:text-neutral-400 text-sm dark:prose-invert sm:min-h-[40px] font-light">
 					{description}
 				</Markdown>
 			</CardContent>

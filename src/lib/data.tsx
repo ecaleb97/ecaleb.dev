@@ -15,51 +15,34 @@ import {
 	Notebook,
 } from "lucide-react";
 import React from "react";
-import { link } from "fs";
 
 export const project1 = [
 	{
-		icon: <Nextjs />,
 		framework: "Next.js",
-		link: "https://nextjs.org/",
 	},
 	{
-		icon: <TailwindCSS />,
 		framework: "Tailwind",
-		link: "https://tailwindcss.com/",
 	},
 	{
-		icon: <TypeScript />,
 		framework: "TypeScript",
-		link: "https://www.typescriptlang.org/",
 	},
 	{
-		icon: shadcnui,
 		framework: "shadcn/ui",
-		link: "https://ui.shadcn.com/",
 	},
 ];
 
 export const project2 = [
 	{
-		icon: <Nextjs />,
 		framework: "Next.js",
-		link: "https://nextjs.org/",
 	},
 	{
-		icon: <TailwindCSS />,
 		framework: "Tailwind",
-		link: "https://tailwindcss.com/",
 	},
 	{
-		icon: <TypeScript />,
 		framework: "TypeScript",
-		link: "https://www.typescriptlang.org/",
 	},
 	{
-		icon: <Hono />,
-		framework: "Hono",
-		link: "https://hono.dev/",
+		framework: "shadcn/ui",
 	},
 ];
 
@@ -156,7 +139,7 @@ export const experienceData = [
 		company: "Freelance",
 		date: "2023 - Present",
 		description:
-			"I work as a fullstack developer on various projects. I'm responsible for developing and maintaining web applications, creating APIs, and implementing new features.",
+			"Currently, I work as a fullstack developer on various projects. I'm responsible for developing and maintaining web applications, creating APIs, and implementing new features.",
 		companyUrl: "/",
 	},
 	{
@@ -168,21 +151,20 @@ export const experienceData = [
 		companyUrl: "https://www.indracompany.com/",
 	},
 	{
-		title: "Frontend Developer | Apple Technician",
+		title: "Frontend Developer",
 		company: "K-tuin Sistemas Informáticos",
 		date: "2020 - 2022",
-		description:
-			"I was responsible for providing technical support to end users, troubleshooting hardware and software issues, and repairing Apple devices. I also worked as a frontend developer, creating and maintaining web applications.",
+		description: "My main role was create and maintain web applications.",
 		companyUrl: "https://www.k-tuin.com/",
 	},
-	{
-		title: "Private Math Tutor",
-		company: "Freelance",
-		date: "2017 - Present",
-		description:
-			"I work as a private math tutor, helping students improve their math skills and prepare for exams. I create personalized lesson plans based on each student's needs and provide ongoing support and feedback.",
-		companyUrl: "/",
-	},
+	// {
+	// 	title: "Private Math Tutor",
+	// 	company: "Freelance",
+	// 	date: "2017 - Present",
+	// 	description:
+	// 		"I work as a private math tutor, helping students improve their math skills and prepare for exams. I create personalized lesson plans based on each student's needs and provide ongoing support and feedback.",
+	// 	companyUrl: "/",
+	// },
 ];
 
 export const links = [
