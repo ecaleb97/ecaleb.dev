@@ -57,17 +57,25 @@ const data = [
 		description:
 			"A recipe search engine that uses AI to suggest recipes based on ingredients.",
 		tags: project1,
-		imageUrl: recetasai,
+		// imageUrl: recetasai,
 		href: "https://recetas.ecaleb.dev",
 		repoUrl: "https://github.com/ecaleb97/recetas-ai",
 	},
+	// {
+	// 	title: "csv uploader",
+	// 	description:
+	// 		"A beautiful CSV uploader with filter and search functionality.",
+	// 	tags: project2,
+	// 	// imageUrl: hack4good,
+	// 	href: "https://csv-uploader-beryl.vercel.app/",
+	// 	repoUrl: "https://github.com/ecaleb97/csv-uploader",
+	// },
 	{
-		title: "csv uploader",
+		title: "github profile viewer",
 		description:
-			"A beautiful CSV uploader with filter and search functionality.",
+			"A simple Github profile viewer that fetches user data using the Github API.",
 		tags: project2,
-		imageUrl: hack4good,
-		href: "https://csv-uploader-beryl.vercel.app/",
-		repoUrl: "https://github.com/ecaleb97/csv-uploader",
-	},
+		href: "https://github-profile-delta-plum.vercel.app/",
+		repoUrl: "https://github.com/ecaleb97/github-profile"
+	}
 ];
