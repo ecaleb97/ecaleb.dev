@@ -1,10 +1,5 @@
 import Github from "@/components/icons/github";
 import Linkedin from "@/components/icons/linkedin";
-import { Nextjs } from "@/components/icons/next";
-import { TailwindCSS } from "@/components/icons/tailwind";
-import { TypeScript } from "@/components/icons/typescript";
-import shadcnui from "@/components/icons/shadcn";
-import Hono from "@/components/icons/hono";
 import { GithubResultApi } from "@/types/types";
 import {
 	BookHeart,
@@ -14,7 +9,6 @@ import {
 	Laptop,
 	Notebook,
 } from "lucide-react";
-import React from "react";
 
 export const project1 = [
 	{

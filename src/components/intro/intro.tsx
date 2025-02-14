@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
 import { AvatarIntro } from "./avatar-intro";
 import { AnimatedGradientText } from "./gradient-text";
-import styles from "@/components/intro/intro.module.css"
+import styles from "@/components/intro/intro.module.css";
 
 export function Intro() {
 	return (
@@ -34,10 +34,11 @@ export function Intro() {
 						className="text-sm leading-[30px] text-pretty
             text-gray-500 dark:text-white"
 					>
-						I&apos;m a <strong>fullstack developer</strong> and{" "}
-						<strong>private math tutor</strong> with a passion for creating
-						amazing user experiences. I love building amazing things and helping
-						people.
+						I&apos;m a{" "}
+						<strong>fullstack developer with +3 years of experience</strong>,{" "}
+						<strong>private math tutor</strong> and{" "}
+						<strong>semi-pro runner</strong> with a passion for creating amazing
+						user experiences. I love building amazing things and helping people.
 					</p>
 					{/* <Social /> */}
 				</div>
