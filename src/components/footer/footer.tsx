@@ -9,7 +9,7 @@ export function Footer() {
       px-4 text-black dark:text-gray-200"
 		>
 			<p className="mb-2 tracking-wider">
-				&copy; {currentYear} Caleb Villanueva Zamalloa
+			Caleb Villanueva Zamalloa - {currentYear} 
 			</p>
 			<p>
 				Made with ❤️ with{" "}
