@@ -2,6 +2,7 @@ import { SocialLink } from "@/components/footer/social-links";
 
 export function Footer() {
 	const currentYear = new Date().getFullYear();
+	console.log(currentYear);
 	return (
 		<footer
 			className="text-center text-xs pb-4

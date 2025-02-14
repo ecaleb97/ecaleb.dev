@@ -139,22 +139,23 @@ export const experienceData = [
 		company: "Freelance",
 		date: "2023 - Present",
 		description:
-			"Currently, I work as a fullstack developer on various projects. I'm responsible for developing and maintaining web applications, creating APIs, and implementing new features.",
+			"Developing web applications, landing pages and websites for clients.",
 		companyUrl: "/",
 	},
 	{
-		title: "Mobile Device Managament",
+		title: "Frontend Developer",
 		company: "Indra Sistemas (Minsait)",
-		date: "2022 - 2023",
-		description:
-			"I worked as a Mobile Device Management Specialist at Indra Sistemas. I was responsible for managing mobile devices, creating and deploying applications, and providing technical support to end users.",
+		date: "2022 - 2024",
+		description: `I had the opportunity to work in intranet applications for the 
+			company and dive into the world of Mobile Device Management.`,
 		companyUrl: "https://www.indracompany.com/",
 	},
 	{
 		title: "Frontend Developer",
 		company: "K-tuin Sistemas Informáticos",
 		date: "2020 - 2022",
-		description: "My main role was create and maintain web applications.",
+		description: `During my time at this company I was in charge of developing the 
+				company's internal tools. API integrations and complex frontend development.`,
 		companyUrl: "https://www.k-tuin.com/",
 	},
 	// {
